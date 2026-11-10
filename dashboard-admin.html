@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Executive Admin Portal | Texon Corporate Business</title>
+  <meta name="description" content="Texon Executive Administrator Portal - Management of clients, revenues, strategic advisories, and system security.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="asset/css/style.css">
+  <link rel="stylesheet" href="asset/css/mobile-responsive.css">
+</head>
+<body style="margin: 0; background: #060b1c;">
+  <!-- Custom Cursor Elements -->
+  <div id="cursorRing" aria-hidden="true"></div>
+  <div id="cursorDot" aria-hidden="true"></div>
+
+  <div class="dash-app-layout">
+
+    <!-- SIDEBAR: EXACTLY 5 OPTIONS -->
+    <aside class="dash-sidebar" id="dashSidebar">
+      <!-- Brand & Role Indicator -->
+      <div class="dash-sidebar-brand">
+        <a href="index.html" class="brand-logo" style="text-decoration: none;" aria-label="Stackly Home">
+          <img src="asset/images/stackly_.webp" alt="Stackly" class="brand-logo-img" style="height: 30px;">
+        </a>
+        <span class="dash-sidebar-role-badge dash-sidebar-role-badge--admin">Admin</span>
+      </div>
+
+      <!-- EXACTLY 5 NAV ITEMS -->
+      <nav class="dash-nav-menu" aria-label="Admin Dashboard Navigation">
+        <span class="dash-nav-label">Executive Suite</span>
+
+        <!-- Option 1: Executive Analytics -->
+        <a class="dash-nav-link active" data-tab="tab-admin-analytics" data-name="Executive Analytics">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="18" y1="20" x2="18" y2="10"></line>
+            <line x1="12" y1="20" x2="12" y2="4"></line>
+            <line x1="6" y1="20" x2="6" y2="14"></line>
+          </svg>
+          <span>1. Analytics</span>
+        </a>
+
+        <!-- Option 2: Client Management -->
+        <a class="dash-nav-link" data-tab="tab-admin-clients" data-name="Corporate Clients">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+            <circle cx="9" cy="7" r="4"></circle>
+            <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+            <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+          </svg>
+          <span>2. Client Directory</span>
+          <span class="dash-nav-badge" style="background: #9333ea;">142</span>
+        </a>
+
+        <!-- Option 3: Strategy Pipeline -->
+        <a class="dash-nav-link" data-tab="tab-admin-strategy" data-name="Advisory Pipeline">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline>
+          </svg>
+          <span>3. Strategy Pipeline</span>
+        </a>
+
+        <!-- Option 4: Revenue & Financials -->
+        <a class="dash-nav-link" data-tab="tab-admin-revenue" data-name="Revenue &amp; Financials">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="12" y1="1" x2="12" y2="23"></line>
+            <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path>
+          </svg>
+          <span>4. Financial Reports</span>
+        </a>
+
+        <!-- Option 5: Team & Administration -->
+        <a class="dash-nav-link" data-tab="tab-admin-settings" data-name="System &amp; Team Administration">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="3"></circle>
+            <path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"></path>
+          </svg>
+          <span>5. Administration</span>
+        </a>
+      </nav>
+
+      <!-- User footer -->
+      <div class="dash-sidebar-footer">
+        <img src="asset/images/team-aarav.webp" alt="Admin Avatar" class="dash-user-thumb" style="border-color: #a855f7;">
+        <div class="dash-user-meta">
+          <div class="dash-user-name" id="dashSidebarUserName">Executive Administrator</div>
+          <div class="dash-user-email" id="dashSidebarUserEmail" style="font-size: 11px; color: #94a3b8; max-width: 140px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; margin-top: 2px;" title="executive.admin@texon.corp">executive.admin@texon.corp</div>
+          <div class="dash-user-role-text">Managing Partner</div>
+        </div>
+        <a href="login.html" class="btn-sidebar-logout" title="Sign Out">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"></path>
+            <polyline points="16 17 21 12 16 7"></polyline>
+            <line x1="21" y1="12" x2="9" y2="12"></line>
+          </svg>
+        </a>
+      </div>
+    </aside>
+
+    <!-- MAIN DASHBOARD CONTENT AREA -->
+    <div class="dash-main-area">
+
+      <!-- Topbar Header -->
+      <header class="dash-topbar">
+        <div class="dash-topbar-left">
+          <button type="button" class="btn-toggle-dash-sidebar" id="dashSidebarToggle" aria-label="Toggle Sidebar">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <line x1="3" y1="12" x2="21" y2="12"></line>
+              <line x1="3" y1="6" x2="21" y2="6"></line>
+              <line x1="3" y1="18" x2="21" y2="18"></line>
+            </svg>
+          </button>
+          <h2 class="dash-topbar-title" id="dashTopbarTitle">Executive Analytics</h2>
+        </div>
+
+        <div class="dash-topbar-actions">
+          <div class="dash-topbar-search">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <circle cx="11" cy="11" r="8"></circle>
+              <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+            </svg>
+            <input type="text" placeholder="Global enterprise search..." onkeydown="if(event.key==='Enter')location.href='404.html'">
+          </div>
+
+          <!-- Topbar User Info Chip -->
+          <div class="dash-user-chip" id="dashTopbarUserChip" style="display: flex; align-items: center; gap: 8px; padding: 6px 14px; background: rgba(255,255,255,0.06); border: 1px solid rgba(168,85,247,0.3); border-radius: 50px;">
+            <span style="width: 8px; height: 8px; border-radius: 50%; background: #10b981; flex-shrink: 0; box-shadow: 0 0 8px #10b981;"></span>
+            <div style="line-height: 1.25; text-align: left;">
+              <div style="font-size: 12.5px; font-weight: 700; color: #ffffff;" class="dash-chip-name" id="dashTopbarUserName">Executive Administrator</div>
+              <div style="font-size: 11px; color: #c084fc; max-width: 160px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;" class="dash-chip-email" id="dashTopbarUserEmail" title="executive.admin@texon.corp">executive.admin@texon.corp</div>
+            </div>
+          </div>
+
+          <!-- Switch to Client Dashboard Option -->
+         
+          
+
+         
+          
+      </header>
+
+      <!-- VIEWPORT FOR 5 TAB PANELS -->
+      <main class="dash-viewport">
+
+        <!-- ==========================================
+             PANEL 1: EXECUTIVE ANALYTICS
+             ========================================== -->
+        <div class="dash-content-panel active" id="tab-admin-analytics">
+
+          <!-- Personalized Executive Session Welcome Banner -->
+          <div class="dash-welcome-banner" style="background: linear-gradient(135deg, rgba(168,85,247,0.16) 0%, rgba(37,99,235,0.1) 100%); border: 1px solid rgba(168,85,247,0.28); border-radius: 18px; padding: 20px 24px; margin-bottom: 24px; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 16px;">
+            <div style="display: flex; align-items: center; gap: 14px;">
+              <div style="width: 44px; height: 44px; border-radius: 12px; background: rgba(168,85,247,0.2); border: 1px solid rgba(192,132,252,0.35); display: flex; align-items: center; justify-content: center; color: #c084fc; flex-shrink: 0;">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+                  <line x1="8" y1="21" x2="16" y2="21"></line>
+                  <line x1="12" y1="17" x2="12" y2="21"></line>
+                </svg>
+              </div>
+              <div>
+                <div style="font-size: 18px; font-weight: 800; color: #ffffff;">Welcome back, <span class="dash-banner-name" id="dashBannerUserName" style="color: #c084fc;">Executive Administrator</span></div>
+                <div style="font-size: 13px; color: #94a3b8; margin-top: 3px;">Logged-in Admin Email: <strong class="dash-banner-email" id="dashBannerUserEmail" style="color: #e2e8f0; font-weight: 600;">executive.admin@texon.corp</strong></div>
+              </div>
+            </div>
+            <div style="display: flex; align-items: center; gap: 10px;">
+              <span style="display: inline-flex; align-items: center; gap: 6px; padding: 6px 14px; border-radius: 50px; background: rgba(16,185,129,0.15); border: 1px solid rgba(16,185,129,0.3); color: #34d399; font-size: 12px; font-weight: 600;">
+                <span style="width: 6px; height: 6px; border-radius: 50%; background: #10b981;"></span>
+                Root Administrator Verified
+              </span>
+            </div>
+          </div>
+
+          <!-- 4 High-level KPIs -->
+          <div class="dash-kpi-grid">
+            <div class="dash-kpi-card">
+              <div class="dash-kpi-top">
+                <span class="dash-kpi-title">Total Annualized ARR</span>
+                <div class="dash-kpi-icon-wrap dash-kpi-icon-wrap--purple">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="1" x2="12" y2="23"></line><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path></svg>
+                </div>
+              </div>
+              <div class="dash-kpi-val">$3.84M</div>
+              <div class="dash-kpi-delta dash-kpi-delta--up">
+                <span>↑ +18.4% YoY Growth</span>
+              </div>
+            </div>
+
+            <div class="dash-kpi-card">
+              <div class="dash-kpi-top">
+                <span class="dash-kpi-title">Active Enterprise Clients</span>
+                <div class="dash-kpi-icon-wrap dash-kpi-icon-wrap--blue">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle></svg>
+                </div>
+              </div>
+              <div class="dash-kpi-val">142 Accounts</div>
+              <div class="dash-kpi-delta dash-kpi-delta--up">
+                <span>↑ +12 new this quarter</span>
+              </div>
+            </div>
+
+            <div class="dash-kpi-card">
+              <div class="dash-kpi-top">
+                <span class="dash-kpi-title">Consulting Programs</span>
+                <div class="dash-kpi-icon-wrap dash-kpi-icon-wrap--green">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline></svg>
+                </div>
+              </div>
+              <div class="dash-kpi-val">28 In Delivery</div>
+              <div class="dash-kpi-delta dash-kpi-delta--up">
+                <span>96.4% on schedule</span>
+              </div>
+            </div>
+
+            <div class="dash-kpi-card">
+              <div class="dash-kpi-top">
+                <span class="dash-kpi-title">SLA Compliance</span>
+                <div class="dash-kpi-icon-wrap dash-kpi-icon-wrap--amber">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+                </div>
+              </div>
+              <div class="dash-kpi-val">99.8%</div>
+              <div class="dash-kpi-delta dash-kpi-delta--up">
+                <span>Enterprise Grade</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Two Column Analytics View -->
+          <div class="dash-two-col-grid">
+            <!-- Monthly Revenue Chart -->
+            <div class="dash-widget-card">
+              <div class="dash-widget-header">
+                <h3 class="dash-widget-title">Monthly Advisory Retainer Growth</h3>
+                <span class="status-pill status-pill--active">FY2026 Target Met</span>
+              </div>
+              <!-- Bar Chart SVG -->
+              <svg class="dash-chart-svg" viewBox="0 0 600 200" preserveAspectRatio="none">
+                <!-- Bars -->
+                <rect x="30" y="110" width="40" height="90" rx="6" fill="#1e3a8a"/>
+                <rect x="110" y="90" width="40" height="110" rx="6" fill="#1e3a8a"/>
+                <rect x="190" y="80" width="40" height="120" rx="6" fill="#1e40af"/>
+                <rect x="270" y="65" width="40" height="135" rx="6" fill="#2563eb"/>
+                <rect x="350" y="50" width="40" height="150" rx="6" fill="#2563eb"/>
+                <rect x="430" y="38" width="40" height="162" rx="6" fill="#3b82f6"/>
+                <rect x="510" y="20" width="40" height="180" rx="6" fill="#60a5fa"/>
+              </svg>
+              <div style="display: flex; justify-content: space-between; font-size: 12px; color: #64748b; margin-top: 12px; padding: 0 10px;">
+                <span>May</span>
+                <span>Jun</span>
+                <span>Jul</span>
+                <span>Aug</span>
+                <span>Sep</span>
+                <span>Oct</span>
+                <span>Nov (Proj)</span>
+              </div>
+            </div>
+
+            <!-- Operations Overview -->
+            <div class="dash-widget-card">
+              <div class="dash-widget-header">
+                <h3 class="dash-widget-title">Executive Allocation</h3>
+              </div>
+              <div style="display: flex; flex-direction: column; gap: 16px;">
+                <div>
+                  <div style="display: flex; justify-content: space-between; font-size: 13px; margin-bottom: 4px;">
+                    <span>Strategic Advisory</span>
+                    <strong style="color: #60a5fa;">42%</strong>
+                  </div>
+                  <div class="dash-prog-bar"><div class="dash-prog-fill" style="width: 42%;"></div></div>
+                </div>
+                <div>
+                  <div style="display: flex; justify-content: space-between; font-size: 13px; margin-bottom: 4px;">
+                    <span>Enterprise Cloud &amp; AI</span>
+                    <strong style="color: #34d399;">28%</strong>
+                  </div>
+                  <div class="dash-prog-bar"><div class="dash-prog-fill" style="width: 28%; background: #10b981;"></div></div>
+                </div>
+                <div>
+                  <div style="display: flex; justify-content: space-between; font-size: 13px; margin-bottom: 4px;">
+                    <span>Governance &amp; ESG</span>
+                    <strong style="color: #c084fc;">18%</strong>
+                  </div>
+                  <div class="dash-prog-bar"><div class="dash-prog-fill" style="width: 18%; background: #a855f7;"></div></div>
+                </div>
+                <div>
+                  <div style="display: flex; justify-content: space-between; font-size: 13px; margin-bottom: 4px;">
+                    <span>M&amp;A Capital Strategy</span>
+                    <strong style="color: #fbbf24;">12%</strong>
+                  </div>
+                  <div class="dash-prog-bar"><div class="dash-prog-fill" style="width: 12%; background: #f59e0b;"></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- ==========================================
+             PANEL 2: CORPORATE CLIENTS
+             ========================================== -->
+        <div class="dash-content-panel" id="tab-admin-clients">
+          <div class="dash-widget-card">
+            <div class="dash-widget-header">
+              <h3 class="dash-widget-title">Enterprise Client Directory (142)</h3>
+             <a href="404.html"><button class="btn-auth-submit" style="width: auto; padding: 8px 18px;" >+ Onboard New Client</button></a>
+            </div>
+            <div class="dash-table-wrap">
+              <table class="dash-table">
+                <thead>
+                  <tr>
+                    <th>Enterprise Account</th>
+                    <th>Tier</th>
+                    <th>Managing Partner</th>
+                    <th>Active Sprints</th>
+                    <th>Monthly Retainer</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><strong>Momentum Logistics Ltd.</strong></td>
+                    <td><span class="status-pill status-pill--active">Enterprise Tier 1</span></td>
+                    <td>Aarav Mehta</td>
+                    <td>4 Sprints</td>
+                    <td>$17,450 / mo</td>
+                    <td><a href="404.html" style="color: #60a5fa;" >Manage →</a></td>
+                  </tr>
+                  <tr>
+                    <td><strong>EcoHomes Green Capital</strong></td>
+                    <td><span class="status-pill status-pill--active">Enterprise Tier 1</span></td>
+                    <td>Siddharth Verma</td>
+                    <td>2 Sprints</td>
+                    <td>$12,800 / mo</td>
+                    <td><a href="404.html" style="color: #60a5fa;" >Manage →</a></td>
+                  </tr>
+                  <tr>
+                    <td><strong>Roadline Fleet Services</strong></td>
+                    <td><span class="status-pill status-pill--progress">Growth Tier 2</span></td>
+                    <td>Vikram Iyer</td>
+                    <td>3 Sprints</td>
+                    <td>$9,500 / mo</td>
+                    <td><a href="404.html" style="color: #60a5fa;" >Manage →</a></td>
+                  </tr>
+                  <tr>
+                    <td><strong>OmniCloud Enterprise Inc.</strong></td>
+                    <td><span class="status-pill status-pill--active">Enterprise Tier 1</span></td>
+                    <td>Sarah Johnson</td>
+                    <td>5 Sprints</td>
+                    <td>$24,000 / mo</td>
+                    <td><a href="404.html" style="color: #60a5fa;" >Manage →</a></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+
+        <!-- ==========================================
+             PANEL 3: STRATEGY PIPELINE
+             ========================================== -->
+        <div class="dash-content-panel" id="tab-admin-strategy">
+          <div class="dash-widget-card">
+            <div class="dash-widget-header">
+              <h3 class="dash-widget-title">Strategic Advisory Delivery Pipeline</h3>
+              <span class="status-pill status-pill--active">Q4 Execution</span>
+            </div>
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 18px; margin-top: 16px;">
+              <div style="background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.08); border-radius: 14px; padding: 18px;">
+                <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 12px;">
+                  <span style="font-size: 12px; color: #60a5fa; font-weight: 700; text-transform: uppercase;">1. Discovery &amp; Audit</span>
+                  <span class="dash-nav-badge">6</span>
+                </div>
+                <div style="background: #060b1c; padding: 12px; border-radius: 10px; margin-bottom: 10px;">
+                  <strong style="color: #ffffff; font-size: 13.5px;">FinTech Architecture Review</strong>
+                  <div style="font-size: 12px; color: #94a3b8; margin-top: 4px;">Apex Capital • Due Nov 18</div>
+                </div>
+                <div style="background: #060b1c; padding: 12px; border-radius: 10px;">
+                  <strong style="color: #ffffff; font-size: 13.5px;">Global Supply Resilience</strong>
+                  <div style="font-size: 12px; color: #94a3b8; margin-top: 4px;">Nordic Freight • Due Nov 22</div>
+                </div>
+              </div>
+
+              <div style="background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.08); border-radius: 14px; padding: 18px;">
+                <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 12px;">
+                  <span style="font-size: 12px; color: #34d399; font-weight: 700; text-transform: uppercase;">2. Sprint Delivery</span>
+                  <span class="dash-nav-badge" style="background: #10b981;">14</span>
+                </div>
+                <div style="background: #060b1c; padding: 12px; border-radius: 10px; margin-bottom: 10px;">
+                  <strong style="color: #ffffff; font-size: 13.5px;">ERP System Modernization</strong>
+                  <div style="font-size: 12px; color: #94a3b8; margin-top: 4px;">Momentum • 84% Completed</div>
+                </div>
+                <div style="background: #060b1c; padding: 12px; border-radius: 10px;">
+                  <strong style="color: #ffffff; font-size: 13.5px;">Sustainability Indexing</strong>
+                  <div style="font-size: 12px; color: #94a3b8; margin-top: 4px;">EcoHomes • 92% Completed</div>
+                </div>
+              </div>
+
+              <div style="background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.08); border-radius: 14px; padding: 18px;">
+                <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 12px;">
+                  <span style="font-size: 12px; color: #c084fc; font-weight: 700; text-transform: uppercase;">3. Final Sign-off</span>
+                  <span class="dash-nav-badge" style="background: #9333ea;">8</span>
+                </div>
+                <div style="background: #060b1c; padding: 12px; border-radius: 10px;">
+                  <strong style="color: #ffffff; font-size: 13.5px;">Cloud Architecture Cutover</strong>
+                  <div style="font-size: 12px; color: #94a3b8; margin-top: 4px;">Roadline • Ready for deployment</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- ==========================================
+             PANEL 4: FINANCIAL REPORTS
+             ========================================== -->
+        <div class="dash-content-panel" id="tab-admin-revenue">
+          <div class="dash-widget-card">
+            <div class="dash-widget-header">
+              <h3 class="dash-widget-title">Corporate Revenue &amp; Financial Ledger</h3>
+              <a href="404.html"></a><button class="btn-fill-demo" >Export CSV Ledger</button></a>
+            </div>
+            <div class="dash-table-wrap">
+              <table class="dash-table">
+                <thead>
+                  <tr>
+                    <th>Ledger Entry</th>
+                    <th>Quarter</th>
+                    <th>Category</th>
+                    <th>Recognized ARR</th>
+                    <th>Audit Status</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><strong>Enterprise Retainer Contracts</strong></td>
+                    <td>Q3 2026</td>
+                    <td>Recurring Retainers</td>
+                    <td>$2,450,000.00</td>
+                    <td><span class="status-pill status-pill--active">Audited</span></td>
+                  </tr>
+                  <tr>
+                    <td><strong>Strategic Consulting Projects</strong></td>
+                    <td>Q3 2026</td>
+                    <td>Fixed Sprints</td>
+                    <td>$890,000.00</td>
+                    <td><span class="status-pill status-pill--active">Audited</span></td>
+                  </tr>
+                  <tr>
+                    <td><strong>Digital Governance Certification</strong></td>
+                    <td>Q3 2026</td>
+                    <td>Compliance Licensing</td>
+                    <td>$500,000.00</td>
+                    <td><span class="status-pill status-pill--active">Audited</span></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+
+        <!-- ==========================================
+             PANEL 5: ADMINISTRATION & TEAM
+             ========================================== -->
+        <div class="dash-content-panel" id="tab-admin-settings">
+          <div class="dash-widget-card">
+            <h3 class="dash-widget-title" style="margin-bottom: 20px;">Partner Roster &amp; Access Controls</h3>
+            <div class="dash-table-wrap">
+              <table class="dash-table">
+                <thead>
+                  <tr>
+                    <th>Advisor Name</th>
+                    <th>Role</th>
+                    <th>Department</th>
+                    <th>Active Accounts</th>
+                    <th>Security Level</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><strong>Aarav Mehta</strong></td>
+                    <td>Managing Partner</td>
+                    <td>Strategic Growth</td>
+                    <td>18 Accounts</td>
+                    <td><span class="status-pill status-pill--active">Root Admin</span></td>
+                  </tr>
+                  <tr>
+                    <td><strong>Vikram Iyer</strong></td>
+                    <td>Technology Partner</td>
+                    <td>Enterprise Cloud</td>
+                    <td>24 Accounts</td>
+                    <td><span class="status-pill status-pill--active">Level 4</span></td>
+                  </tr>
+                  <tr>
+                    <td><strong>Siddharth Verma</strong></td>
+                    <td>Operations Partner</td>
+                    <td>ESG &amp; Sustainability</td>
+                    <td>15 Accounts</td>
+                    <td><span class="status-pill status-pill--active">Level 4</span></td>
+                  </tr>
+                  <tr>
+                    <td><strong>Sarah Johnson</strong></td>
+                    <td>Executive Director</td>
+                    <td>People &amp; Governance</td>
+                    <td>21 Accounts</td>
+                    <td><span class="status-pill status-pill--active">Level 4</span></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+
+          <!-- Admin System Contact Settings -->
+          <div class="dash-settings-card" style="margin-top: 24px;">
+            <h3 class="dash-widget-title" style="margin-bottom: 20px;">System Administrator Profile</h3>
+            <form onsubmit="event.preventDefault(); alert('Admin profile saved successfully!');">
+              <div class="dash-form-row">
+                <div class="auth-field-group">
+                  <label class="auth-label">Administrator Name</label>
+                  <input type="text" class="auth-input name-input" style="padding-left: 16px;" value="Aarav Mehta" required title="Only alphabetic letters and spaces allowed">
+                </div>
+                <div class="auth-field-group">
+                  <label class="auth-label">Admin Email</label>
+                  <input type="email" class="auth-input" style="padding-left: 16px;" value="admin@texon.com" required>
+                </div>
+              </div>
+              <div class="auth-field-group">
+                <label class="auth-label">Admin Contact Phone</label>
+                <div style="position: relative; display: flex; align-items: center;">
+                  <svg style="position: absolute; left: 14px; color: #64748b; pointer-events: none; flex-shrink: 0;" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.63 3.47 2 2 0 0 1 3.6 1.27h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.6a16 16 0 0 0 6 6l.95-.95a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                  </svg>
+                  <input type="tel" class="auth-input phone-number-input" style="padding-left: 44px;" placeholder="e.g. 10095447818" inputmode="numeric" maxlength="15" value="10095447818" autocomplete="tel" title="Only numbers allowed">
+                </div>
+              </div>
+             <a href="404.html"> <button type="submit" class="btn-auth-submit" style="width: auto; padding: 12px 28px; margin-top: 8px;">
+                Save Administrator Settings
+              </button></a>
+            </form>
+          </div>
+
+      </main>
+    </div>
+
+  </div>
+
+  <!-- Core Theme Script -->
+  <script src="asset/js/main.js"></script>
+</body>
+</html>

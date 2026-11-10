@@ -1,0 +1,2011 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Texon - Modern Corporate Business Website Theme. Built for Business, Designed for Success. High-performance, responsive corporate theme.">
+  <title>Texon - Built for Business, Designed for Success</title>
+
+  <!-- Google Fonts: Plus Jakarta Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Core Theme Stylesheet (Inside asset folder) -->
+  <link rel="stylesheet" href="asset/css/style.css">
+  <link rel="stylesheet" href="asset/css/mobile-responsive.css">
+</head>
+<body>
+  <!-- ==========================================================================
+       STACKLY ADVANCED PRELOADER
+       ========================================================================== -->
+  <div id="stacklyPreloader" class="stackly-preloader" role="status" aria-live="polite" aria-label="Loading Stackly">
+    <!-- Ambient Background Lighting Mesh -->
+    <div class="preloader-ambient-bg" aria-hidden="true">
+      <div class="preloader-glow-orb preloader-glow-orb--1"></div>
+      <div class="preloader-glow-orb preloader-glow-orb--2"></div>
+      <div class="preloader-glow-orb preloader-glow-orb--3"></div>
+      <div class="preloader-grid-overlay"></div>
+    </div>
+
+    <!-- Orbiting Theme-Related Badges Container -->
+    <div class="preloader-orbit-system" aria-hidden="true">
+      <!-- Outer & Inner Orbit Rings -->
+      <div class="preloader-orbit-ring preloader-orbit-ring--outer"></div>
+      <div class="preloader-orbit-ring preloader-orbit-ring--inner"></div>
+
+      <!-- 6 Theme-Related Corporate Technology Icons -->
+      <!-- Icon 1: Corporate Strategy & Planning -->
+      <div class="preloader-icon-badge preloader-icon-badge--1" title="Corporate Strategy">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <circle cx="12" cy="12" r="10"></circle>
+          <circle cx="12" cy="12" r="6"></circle>
+          <circle cx="12" cy="12" r="2"></circle>
+        </svg>
+      </div>
+
+      <!-- Icon 2: Cloud Enterprise Architecture -->
+      <div class="preloader-icon-badge preloader-icon-badge--2" title="Cloud Enterprise">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M18 10h-1.26A8 8 0 1 0 9 20h9a5 5 0 0 0 0-10z"></path>
+        </svg>
+      </div>
+
+      <!-- Icon 3: Growth Analytics & Performance -->
+      <div class="preloader-icon-badge preloader-icon-badge--3" title="Growth Analytics">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <line x1="18" y1="20" x2="18" y2="10"></line>
+          <line x1="12" y1="20" x2="12" y2="4"></line>
+          <line x1="6" y1="20" x2="6" y2="14"></line>
+        </svg>
+      </div>
+
+      <!-- Icon 4: Global Connectivity & Operations -->
+      <div class="preloader-icon-badge preloader-icon-badge--4" title="Global Connectivity">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <circle cx="12" cy="12" r="10"></circle>
+          <line x1="2" y1="12" x2="22" y2="12"></line>
+          <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
+        </svg>
+      </div>
+
+      <!-- Icon 5: Enterprise Governance & Trust -->
+      <div class="preloader-icon-badge preloader-icon-badge--5" title="Enterprise Governance">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+          <polyline points="9 12 11 14 15 10"></polyline>
+        </svg>
+      </div>
+
+      <!-- Icon 6: High Performance & Velocity -->
+      <div class="preloader-icon-badge preloader-icon-badge--6" title="High Velocity Innovation">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon>
+        </svg>
+      </div>
+    </div>
+
+    <!-- Center Stage Card -->
+    <div class="preloader-card">
+      <!-- Glowing Halo Behind Logo -->
+      <div class="preloader-logo-halo" aria-hidden="true"></div>
+
+      <!-- Animated Stackly Logo with Shimmer Wave -->
+      <a href="index.html" class="preloader-logo-wrapper" aria-label="Stackly Home">
+        <img src="asset/images/stackly_.webp" alt="Stackly" class="preloader-logo-img">
+        <div class="preloader-shimmer-sweep" aria-hidden="true"></div>
+      </a>
+
+      <!-- Tagline & Dynamic Status Caption -->
+      <div class="preloader-tagline">
+        <span class="preloader-tagline-dot"></span>
+        <span id="preloaderStatusText" class="preloader-status-text">Synchronizing enterprise workspace...</span>
+      </div>
+
+      <!-- Modern Glowing Linear Progress Track -->
+      <div class="preloader-progress-box">
+        <div class="preloader-progress-track">
+          <div id="preloaderProgressBar" class="preloader-progress-fill">
+            <span class="preloader-progress-head"></span>
+          </div>
+        </div>
+        <div class="preloader-progress-meta">
+          <span class="preloader-phase-label">SYSTEM READY</span>
+          <span id="preloaderPercent" class="preloader-percent">0%</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Custom Cursor Elements -->
+  <div id="cursorRing" aria-hidden="true"></div>
+  <div id="cursorDot" aria-hidden="true"></div>
+
+  <!-- ==========================================================================
+       SITE HEADER
+       ========================================================================== -->
+  <header class="site-header">
+    <div class="container header-container">
+      
+      <!-- Brand Logo -->
+      <a href="index.html" class="brand-logo" aria-label="Stackly Home">
+        <img src="asset/images/stackly_.webp" alt="Stackly" class="brand-logo-img">
+      </a>
+
+      <!-- Desktop Navigation Menu -->
+      <nav class="desktop-nav" aria-label="Primary Navigation">
+        <ul class="nav-list">
+          <!-- Home -->
+          <li class="nav-item active">
+            <a href="index.html" class="nav-link">Home</a>
+          </li>
+
+          <!-- About -->
+          <li class="nav-item">
+            <a href="about.html" class="nav-link">About</a>
+          </li>
+
+          <!-- Portfolio -->
+          <li class="nav-item">
+            <a href="portfolio.html" class="nav-link">Portfolio</a>
+          </li>
+
+          <!-- Blog -->
+          <li class="nav-item">
+            <a href="blog.html" class="nav-link">Blog</a>
+          </li>
+
+          <!-- Contact -->
+          <li class="nav-item">
+            <a href="contact.html" class="nav-link">Contact</a>
+          </li>
+        </ul>
+      </nav>
+
+      <!-- Header Right Tools -->
+      <div class="header-actions">
+        <!-- Search Trigger Button -->
+        <a href="404.html" class="btn-icon-round" id="searchTriggerBtn" aria-label="Open Search">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="11" cy="11" r="8"></circle>
+            <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+          </svg>
+        </a>
+
+        <!-- Login Button -->
+        <a href="login.html" class="btn-login" id="loginTriggerBtn" aria-label="Client Login">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M15 3h4a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2h-4"></path>
+            <polyline points="10 17 15 12 10 7"></polyline>
+            <line x1="15" y1="12" x2="3" y2="12"></line>
+          </svg>
+          <span>Login</span>
+        </a>
+
+        <!-- Let's Connect Button -->
+        <a href="404.html" class="btn-connect">
+          Let's Connect
+          <span class="arrow-diag">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+              <line x1="7" y1="17" x2="17" y2="7"></line>
+              <polyline points="7 7 17 7 17 17"></polyline>
+            </svg>
+          </span>
+        </a>
+
+        <!-- Hamburger Button for Mobile / Off-canvas -->
+        <button type="button" class="btn-hamburger" id="menuHamburgerBtn" aria-label="Toggle Navigation Menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+
+    </div>
+  </header>
+
+  <!-- ==========================================================================
+       FLOATING SIDE TOOLS (Cart & Settings)
+       ========================================================================== -->
+  <aside class="floating-side-tools" aria-label="Quick Actions">
+    <button type="button" class="float-tool-btn float-cart" id="floatingCartBtn" title="View Cart">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+        <circle cx="9" cy="21" r="1"></circle>
+        <circle cx="20" cy="21" r="1"></circle>
+        <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+      </svg>
+      <span class="badge-count">5</span>
+    </button>
+    <button type="button" class="float-tool-btn float-settings" id="floatingSettingsBtn" title="Customize Theme">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+        <circle cx="12" cy="12" r="3"></circle>
+        <path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"></path>
+      </svg>
+    </button>
+  </aside>
+
+  <!-- ==========================================================================
+       HERO SECTION (Matching Provided Design)
+       ========================================================================== -->
+  <section class="hero-section" id="hero">
+    <!-- Ambient Background Glows -->
+    <div class="hero-glow-1"></div>
+    <div class="hero-glow-2"></div>
+
+    <div class="container hero-grid">
+      
+      <!-- Hero Left: Typography & Copy -->
+      <div class="hero-content">
+        <!-- Excellence Badge -->
+        <div class="hero-badge-pill">
+          <span class="check-icon">✓</span>
+          <span>Awarded For Excellence</span>
+        </div>
+
+        <!-- Headline -->
+        <h1 class="hero-title">
+          Built for<br>
+          Business<br>
+          Designed for<br>
+          <span class="title-accent">Success.</span>
+        </h1>
+
+        <!-- Supporting Text -->
+        <p class="hero-desc">
+          Transforming business through high-standard resources, transparent models, and innovative technology. Competently delivering excellence, leveraging transparency, and transforming businesses with technology.
+        </p>
+
+        <!-- CTA Buttons -->
+        <div class="hero-cta-group">
+          <a href="404.html" class="btn-primary-hero">
+            Get Started Now
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+              <line x1="7" y1="17" x2="17" y2="7"></line>
+              <polyline points="7 7 17 7 17 17"></polyline>
+            </svg>
+          </a>
+
+          <a href="404.html" class="btn-video-hero">
+            <span class="play-circle">▶</span>
+            <span>Discover Solutions</span>
+          </a>
+        </div>
+
+        <!-- Hero Slider Navigation Bar -->
+        <div class="hero-slider-nav-bar">
+          <div class="slider-arrows">
+            <button type="button" class="slider-arrow-btn" id="heroPrevBtn" aria-label="Previous Slide">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="19" y1="12" x2="5" y2="12"></line>
+                <polyline points="12 19 5 12 12 5"></polyline>
+              </svg>
+            </button>
+            <button type="button" class="slider-arrow-btn" id="heroNextBtn" aria-label="Next Slide">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+                <polyline points="12 5 19 12 12 19"></polyline>
+              </svg>
+            </button>
+          </div>
+
+          <!-- Slide Dots (5 Slides) -->
+          <div class="slider-dots" aria-label="Slide Selection Dots">
+            <span class="slider-dot active" data-index="0" title="Slide 1"></span>
+            <span class="slider-dot" data-index="1" title="Slide 2"></span>
+            <span class="slider-dot" data-index="2" title="Slide 3"></span>
+            <span class="slider-dot" data-index="3" title="Slide 4"></span>
+            <span class="slider-dot" data-index="4" title="Slide 5"></span>
+          </div>
+
+          <!-- Slide Counter -->
+          <div class="slider-counter">
+            <span class="current-num">01</span> / <span class="total-num">05</span>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Hero Right: Slider Visual Frame & Badges -->
+      <div class="hero-visual-wrapper">
+
+        <!-- Rotating Circular Badge (Top Right) -->
+        <div class="rotating-badge-container">
+          <div class="rotating-circle-badge">
+            <svg class="rotating-text-svg" viewBox="0 0 200 200">
+              <defs>
+                <path id="textCircle" d="M 100, 100 m -70, 0 a 70,70 0 1,1 140,0 a 70,70 0 1,1 -140,0" />
+              </defs>
+              <text>
+                <textPath href="#textCircle" startOffset="0%">
+                  SOLUTIONS • INNOVATE • CREATE • TECHNOLOGY •
+                </textPath>
+              </text>
+            </svg>
+            <div class="badge-center-icon">
+              <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="20" cy="11" r="5" stroke="currentColor" stroke-width="3" />
+                <circle cx="13" cy="25" r="5" stroke="currentColor" stroke-width="3" />
+                <circle cx="27" cy="25" r="5" stroke="currentColor" stroke-width="3" />
+              </svg>
+            </div>
+          </div>
+        </div>
+
+        <!-- 5-Slide Image Frame -->
+        <div class="hero-slider-frame">
+          <div class="hero-slides-container">
+
+            <!-- Slide 1: Businessman Celebrating Success (Matching Screenshot) -->
+            <div class="hero-slide active" data-slide="0">
+              <img src="asset/images/hero-slide-1.webp" alt="Corporate Executive celebrating business success with laptop" width="960" height="717">
+              <div class="hero-slide-overlay"></div>
+            </div>
+
+            <!-- Slide 2: Corporate Team Boardroom Collaboration -->
+            <div class="hero-slide" data-slide="1">
+              <img src="asset/images/hero-slide-2.webp" alt="Corporate team collaborating in boardroom" width="960" height="717" loading="lazy">
+              <div class="hero-slide-overlay"></div>
+            </div>
+
+            <!-- Slide 3: Executive Businesswoman Leader -->
+            <div class="hero-slide" data-slide="2">
+              <img src="asset/images/hero-slide-3.webp" alt="Confident corporate executive businesswoman" width="960" height="717" loading="lazy">
+              <div class="hero-slide-overlay"></div>
+            </div>
+
+            <!-- Slide 4: Business Partnership Handshake -->
+            <div class="hero-slide" data-slide="3">
+              <img src="asset/images/hero-slide-4.webp" alt="Corporate executives shaking hands sealing deal" width="960" height="717" loading="lazy">
+              <div class="hero-slide-overlay"></div>
+            </div>
+
+            <!-- Slide 5: Strategic Analysts Tech Review -->
+            <div class="hero-slide" data-slide="4">
+              <img src="asset/images/hero-slide-5.webp" alt="Corporate analysts reviewing growth analytics" width="960" height="717" loading="lazy">
+              <div class="hero-slide-overlay"></div>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- Floating Satisfaction Clients Badge (Bottom Left of Image) -->
+        <div class="clients-satisfaction-card">
+          <div class="avatar-stack">
+            <div class="avatar-img-item">
+              <img src="asset/images/avatar-1.webp" alt="Client Avatar 1" width="42" height="42">
+            </div>
+            <div class="avatar-img-item">
+              <img src="asset/images/avatar-2.webp" alt="Client Avatar 2" width="42" height="42">
+            </div>
+            <div class="avatar-img-item">
+              <img src="asset/images/avatar-3.webp" alt="Client Avatar 3" width="42" height="42">
+            </div>
+            <div class="avatar-plus-item">+</div>
+          </div>
+          <div class="clients-info-text">
+            <span class="clients-count">Our 30k+</span>
+            <span class="clients-label">Satisfaction Clients</span>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       FEATURES / VALUE PILLARS SECTION (Matching Uploaded Screenshot)
+       ========================================================================== -->
+  <section class="features-pillars-section" id="choose-us">
+    <div class="container">
+      
+      <!-- Center Section Header -->
+      <div class="pillars-header-center scroll-reveal">
+        <!-- Top Pill Badge -->
+        <div class="pillars-badge-pill">
+          <span class="badge-dot"></span>
+          <span>CHOOSE WHAT FITS YOU</span>
+        </div>
+
+        <!-- Section Main Title -->
+        <h2 class="pillars-main-title">
+          Powering Business<br>
+          Growth with <span class="title-blue-accent">Expertise.</span>
+        </h2>
+      </div>
+
+      <!-- 3 Feature Cards Grid -->
+      <div class="pillars-grid">
+        
+        <!-- Card 1: Future-Ready Solutions -->
+        <div class="pillar-card scroll-reveal" data-delay="100">
+          <!-- Top-Right Scooped Corner Notch with Dark Arrow Button -->
+          <div class="pillar-cutout">
+            <a href="404.html" class="pillar-arrow-btn" aria-label="Learn more about Future-Ready Solutions">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="7" y1="17" x2="17" y2="7"></line>
+                <polyline points="7 7 17 7 17 17"></polyline>
+              </svg>
+            </a>
+          </div>
+
+          <!-- Card Icon -->
+          <div class="pillar-icon-wrap">
+            <svg width="44" height="44" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M9 18h6"></path>
+              <path d="M10 22h4"></path>
+              <path d="M15.09 14c.18-.98.65-1.74 1.41-2.5A4.65 4.65 0 0 0 18 8 6 6 0 0 0 6 8c0 1 .23 2.23 1.5 3.5A4.61 4.61 0 0 1 8.91 14"></path>
+            </svg>
+          </div>
+
+          <!-- Card Content -->
+          <div class="pillar-body-text">
+            <h3 class="pillar-title">Future-Ready Solutions</h3>
+            <p class="pillar-desc">
+              Award-winning. Industry-recognized.<br>
+              Proven excellence across all project.
+            </p>
+          </div>
+        </div>
+
+        <!-- Card 2: Trusted Team of Experts -->
+        <div class="pillar-card scroll-reveal" data-delay="200">
+          <!-- Top-Right Scooped Corner Notch with Dark Arrow Button -->
+          <div class="pillar-cutout">
+            <a href="404.html" class="pillar-arrow-btn" aria-label="Learn more about Trusted Team of Experts">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="7" y1="17" x2="17" y2="7"></line>
+                <polyline points="7 7 17 7 17 17"></polyline>
+              </svg>
+            </a>
+          </div>
+
+          <!-- Card Icon -->
+          <div class="pillar-icon-wrap">
+            <svg width="44" height="44" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6"></path>
+              <path d="M18 9h1.5a2.5 2.5 0 0 0 0-5H18"></path>
+              <path d="M4 22h16"></path>
+              <path d="M10 14.66V17c0 .55-.45 1-1 1H7c-.55 0-1 .45-1 1v1h12v-1c0-.55-.45-1-1-1h-2c-.55 0-1-.45-1-1v-2.34"></path>
+              <path d="M6 4h12v5a6 6 0 0 1-12 0V4z"></path>
+              <polygon points="12 7 13.09 9.26 15.5 9.5 13.75 11.14 14.24 13.5 12 12.26 9.76 13.5 10.25 11.14 8.5 9.5 10.91 9.26 12 7"></polygon>
+            </svg>
+          </div>
+
+          <!-- Card Content -->
+          <div class="pillar-body-text">
+            <h3 class="pillar-title">Trusted Team of Experts</h3>
+            <p class="pillar-desc">
+              Always available, we resolve issues fast to<br>
+              keep your business running.
+            </p>
+          </div>
+        </div>
+
+        <!-- Card 3: Customer-First Support -->
+        <div class="pillar-card scroll-reveal" data-delay="300">
+          <!-- Top-Right Scooped Corner Notch with Dark Arrow Button -->
+          <div class="pillar-cutout">
+            <a href="404.html" class="pillar-arrow-btn" aria-label="Learn more about Customer-First Support">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="7" y1="17" x2="17" y2="7"></line>
+                <polyline points="7 7 17 7 17 17"></polyline>
+              </svg>
+            </a>
+          </div>
+
+          <!-- Card Icon -->
+          <div class="pillar-icon-wrap">
+            <svg width="44" height="44" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="12" cy="7" r="4"></circle>
+              <path d="M5.5 21v-2a6.5 6.5 0 0 1 13 0v2"></path>
+              <line x1="3" y1="21" x2="21" y2="21"></line>
+              <path d="M15 11l2 2"></path>
+              <circle cx="17.5" cy="13.5" r="1.5"></circle>
+            </svg>
+          </div>
+
+          <!-- Card Content -->
+          <div class="pillar-body-text">
+            <h3 class="pillar-title">Customer-First Support</h3>
+            <p class="pillar-desc">
+              Our team is always available—ready to<br>
+              resolve concerns quickly and effectively.
+            </p>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       ABOUT OVERVIEW SECTION (Driving Business Growth - Matching Screenshot)
+       ========================================================================== -->
+  <section class="about-overview-section" id="about">
+    <div class="container">
+      <div class="about-overview-grid">
+        
+        <!-- Left: Image with Geometric Offset Blue Border -->
+        <div class="about-image-column scroll-reveal">
+          <div class="about-image-wrapper">
+            <!-- Offset Blue Decorative Border/Layer -->
+            <div class="about-image-backdrop"></div>
+            
+            <!-- Main Photo Container -->
+            <div class="about-photo-card">
+              <img src="asset/images/about-executive-portrait.webp" alt="Corporate Executive Driving Business Growth with IT Solutions" width="700" height="875" loading="lazy">
+              <div class="about-photo-reflection"></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right: Content Column -->
+        <div class="about-content-column scroll-reveal" data-delay="150">
+          <!-- Top Pill Badge -->
+          <div class="about-badge-pill">
+            <span class="badge-dot"></span>
+            <span>KNOW ABOUT US</span>
+          </div>
+
+          <!-- Main Title -->
+          <h2 class="about-main-title">
+            Driving Business Growth<br>
+            with Cutting-Edge IT<br>
+            Solutions Worldwide
+          </h2>
+
+          <!-- Subtitle / Paragraph -->
+          <p class="about-lead-desc">
+            As a results-oriented consulting firm, we help organizations boost performance, refine operations, and achieve long-term growth.
+          </p>
+
+          <!-- Split Row: Checklist on Left, 12+ Years Stat on Right -->
+          <div class="about-metrics-split-row">
+            <!-- Checklist (4 items with solid blue checkmark circles) -->
+            <div class="about-checklist-group">
+              <div class="about-check-item">
+                <span class="about-check-icon">✓</span>
+                <span class="about-check-text">Audit, Research & Insights</span>
+              </div>
+              <div class="about-check-item">
+                <span class="about-check-icon">✓</span>
+                <span class="about-check-text">Stakeholders & Internal Comms</span>
+              </div>
+              <div class="about-check-item">
+                <span class="about-check-icon">✓</span>
+                <span class="about-check-text">Customer Journey Review</span>
+              </div>
+              <div class="about-check-item">
+                <span class="about-check-icon">✓</span>
+                <span class="about-check-text">Positioning, Messaging</span>
+              </div>
+            </div>
+
+            <!-- Vertical Divider & 12+ Years Experience Counter -->
+            <div class="about-experience-counter-wrap">
+              <div class="experience-big-num">
+                12<span class="plus-accent">+</span>
+              </div>
+              <div class="experience-label-text">
+                Total Years Of<br>
+                Experiences
+              </div>
+              <!-- Hand-drawn curved blue arrow SVG -->
+              <svg class="experience-curved-arrow" width="38" height="48" viewBox="0 0 40 50" fill="none" stroke="#2563eb" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M10 6C24 10 34 22 30 36C27 42 21 44 15 44"></path>
+                <polyline points="20 40 15 44 18 48"></polyline>
+              </svg>
+            </div>
+          </div>
+
+          <!-- CTA Button -->
+          <div class="about-action-wrap">
+            <a href="404.html" class="btn-connect" style="padding: 14px 34px; font-size: 15px;">
+              Learn More Here
+              <span class="arrow-diag">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+                  <line x1="7" y1="17" x2="17" y2="7"></line>
+                  <polyline points="7 7 17 7 17 17"></polyline>
+                </svg>
+              </span>
+            </a>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       AUTOMATIC BRAND MARQUEE SECTION (Matching Uploaded Screenshot)
+       ========================================================================== -->
+  <section class="brand-marquee-section" aria-label="Partner Brands">
+    <div class="marquee-slider-container">
+      <div class="marquee-track">
+        
+        <!-- Brand 1: network management -->
+        <div class="brand-logo-card">
+          <div class="brand-card-content brand-layout-col">
+            <svg class="brand-logo-svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="12" cy="5" r="3"></circle>
+              <circle cx="6" cy="19" r="3"></circle>
+              <circle cx="18" cy="19" r="3"></circle>
+              <line x1="8.59" y1="13.51" x2="15.42" y2="17.49"></line>
+              <line x1="15.41" y1="6.51" x2="8.59" y2="10.49"></line>
+            </svg>
+            <div class="brand-name-group">
+              <span class="brand-name-bold">network</span>
+              <span class="brand-name-sub">management</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Brand 2: ROADLINE travelling services (Matching Screenshot) -->
+        <div class="brand-logo-card">
+          <div class="brand-card-content brand-layout-row">
+            <div class="brand-icon-box">
+              <svg class="brand-logo-svg" width="36" height="36" viewBox="0 0 36 36" fill="currentColor">
+                <rect width="36" height="36" rx="4" fill="#0b132b"/>
+                <path d="M6 31 C12 21 18 13 30 9 L30 14 C20 18 14 25 9 31 Z" fill="#dfe6f9"/>
+                <path d="M14 31 C18 26 22 20 30 18 L30 22 C24 24 20 27 16 31 Z" fill="#dfe6f9"/>
+              </svg>
+            </div>
+            <div class="brand-text-block">
+              <span class="brand-roadline-title">ROADLINE</span>
+              <span class="brand-roadline-sub">travelling services</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Brand 3: pro.meet (Matching Screenshot) -->
+        <div class="brand-logo-card">
+          <div class="brand-card-content brand-layout-col">
+            <svg class="brand-logo-svg" width="34" height="26" viewBox="0 0 34 26" fill="currentColor">
+              <path d="M17 1 C8.5 1 3.5 7 3.5 14 C5.2 8.8 10 4.8 17 4.8 C24 4.8 28.8 8.8 30.5 14 C30.5 7 25.5 1 17 1 Z"/>
+              <path d="M9.5 12.5 L12.5 9.5 C13.5 8.5 15.5 8.5 16.5 9.5 L17.5 10.5 L18.5 9.5 C19.5 8.5 21.5 8.5 22.5 9.5 L24.5 11.5 C25.5 12.5 25.5 14.5 24.5 15.5 L21.5 18.5 C20.5 19.5 18.5 19.5 17.5 18.5 L16.5 17.5 L15.5 18.5 C14.5 19.5 12.5 19.5 11.5 18.5 L8.5 15.5 C7.5 14.5 7.5 12.5 8.5 11.5 L9.5 12.5 Z"/>
+            </svg>
+            <span class="brand-name-bold">pro.meet</span>
+          </div>
+        </div>
+
+        <!-- Brand 4: speedeliver (Matching Screenshot) -->
+        <div class="brand-logo-card">
+          <div class="brand-card-content brand-layout-col">
+            <svg class="brand-logo-svg" width="40" height="22" viewBox="0 0 42 22" fill="currentColor">
+              <path d="M2 4 L18 4 L15 8 L4 8 Z"/>
+              <path d="M8 10 L22 10 L19 14 L10 14 Z"/>
+              <path d="M21 3 C27 3 32 5 35 8 C37 10 40 11 42 11 C39 13 36 16 34 16 C32 16 30 14 28 14 L24 18 L21 15 L25 11 L18 11 Z"/>
+            </svg>
+            <span class="brand-name-bold">speedeliver</span>
+          </div>
+        </div>
+
+        <!-- Brand 5: ecohomes (Matching Screenshot) -->
+        <div class="brand-logo-card">
+          <div class="brand-card-content brand-layout-col">
+            <svg class="brand-logo-svg" width="30" height="26" viewBox="0 0 30 26" fill="currentColor">
+              <polygon points="15 2 2 13 5.5 13 5.5 24 24.5 24 24.5 13 28 13"/>
+              <rect x="20" y="4" width="3" height="6"/>
+              <rect x="11.5" y="8" width="7" height="7" rx="1" fill="#dfe6f9"/>
+              <line x1="15" y1="8" x2="15" y2="15" stroke="#0b132b" stroke-width="1.5"/>
+              <line x1="11.5" y1="11.5" x2="18.5" y2="11.5" stroke="#0b132b" stroke-width="1.5"/>
+              <path d="M11 24 C11 20 19 20 19 24 Z" fill="#dfe6f9"/>
+            </svg>
+            <span class="brand-name-bold">ecohomes</span>
+          </div>
+        </div>
+
+        <!-- Brand 6: omnicloud -->
+        <div class="brand-logo-card">
+          <div class="brand-card-content brand-layout-col">
+            <svg class="brand-logo-svg" width="30" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M18 10h-1.26A8 8 0 1 0 9 20h9a5 5 0 0 0 0-10z"></path>
+            </svg>
+            <span class="brand-name-bold">omnicloud</span>
+          </div>
+        </div>
+
+        <!-- EXACT DUPLICATE TO CREATE SEAMLESS 100% INFINITE CONTINUOUS LOOP -->
+        <!-- Brand 1 duplicate -->
+        <div class="brand-logo-card" aria-hidden="true">
+          <div class="brand-card-content brand-layout-col">
+            <svg class="brand-logo-svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="12" cy="5" r="3"></circle>
+              <circle cx="6" cy="19" r="3"></circle>
+              <circle cx="18" cy="19" r="3"></circle>
+              <line x1="8.59" y1="13.51" x2="15.42" y2="17.49"></line>
+              <line x1="15.41" y1="6.51" x2="8.59" y2="10.49"></line>
+            </svg>
+            <div class="brand-name-group">
+              <span class="brand-name-bold">network</span>
+              <span class="brand-name-sub">management</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Brand 2 duplicate -->
+        <div class="brand-logo-card" aria-hidden="true">
+          <div class="brand-card-content brand-layout-row">
+            <div class="brand-icon-box">
+              <svg class="brand-logo-svg" width="36" height="36" viewBox="0 0 36 36" fill="currentColor">
+                <rect width="36" height="36" rx="4" fill="#0b132b"/>
+                <path d="M6 31 C12 21 18 13 30 9 L30 14 C20 18 14 25 9 31 Z" fill="#dfe6f9"/>
+                <path d="M14 31 C18 26 22 20 30 18 L30 22 C24 24 20 27 16 31 Z" fill="#dfe6f9"/>
+              </svg>
+            </div>
+            <div class="brand-text-block">
+              <span class="brand-roadline-title">ROADLINE</span>
+              <span class="brand-roadline-sub">travelling services</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Brand 3 duplicate -->
+        <div class="brand-logo-card" aria-hidden="true">
+          <div class="brand-card-content brand-layout-col">
+            <svg class="brand-logo-svg" width="34" height="26" viewBox="0 0 34 26" fill="currentColor">
+              <path d="M17 1 C8.5 1 3.5 7 3.5 14 C5.2 8.8 10 4.8 17 4.8 C24 4.8 28.8 8.8 30.5 14 C30.5 7 25.5 1 17 1 Z"/>
+              <path d="M9.5 12.5 L12.5 9.5 C13.5 8.5 15.5 8.5 16.5 9.5 L17.5 10.5 L18.5 9.5 C19.5 8.5 21.5 8.5 22.5 9.5 L24.5 11.5 C25.5 12.5 25.5 14.5 24.5 15.5 L21.5 18.5 C20.5 19.5 18.5 19.5 17.5 18.5 L16.5 17.5 L15.5 18.5 C14.5 19.5 12.5 19.5 11.5 18.5 L8.5 15.5 C7.5 14.5 7.5 12.5 8.5 11.5 L9.5 12.5 Z"/>
+            </svg>
+            <span class="brand-name-bold">pro.meet</span>
+          </div>
+        </div>
+
+        <!-- Brand 4 duplicate -->
+        <div class="brand-logo-card" aria-hidden="true">
+          <div class="brand-card-content brand-layout-col">
+            <svg class="brand-logo-svg" width="40" height="22" viewBox="0 0 42 22" fill="currentColor">
+              <path d="M2 4 L18 4 L15 8 L4 8 Z"/>
+              <path d="M8 10 L22 10 L19 14 L10 14 Z"/>
+              <path d="M21 3 C27 3 32 5 35 8 C37 10 40 11 42 11 C39 13 36 16 34 16 C32 16 30 14 28 14 L24 18 L21 15 L25 11 L18 11 Z"/>
+            </svg>
+            <span class="brand-name-bold">speedeliver</span>
+          </div>
+        </div>
+
+        <!-- Brand 5 duplicate -->
+        <div class="brand-logo-card" aria-hidden="true">
+          <div class="brand-card-content brand-layout-col">
+            <svg class="brand-logo-svg" width="30" height="26" viewBox="0 0 30 26" fill="currentColor">
+              <polygon points="15 2 2 13 5.5 13 5.5 24 24.5 24 24.5 13 28 13"/>
+              <rect x="20" y="4" width="3" height="6"/>
+              <rect x="11.5" y="8" width="7" height="7" rx="1" fill="#dfe6f9"/>
+              <line x1="15" y1="8" x2="15" y2="15" stroke="#0b132b" stroke-width="1.5"/>
+              <line x1="11.5" y1="11.5" x2="18.5" y2="11.5" stroke="#0b132b" stroke-width="1.5"/>
+              <path d="M11 24 C11 20 19 20 19 24 Z" fill="#dfe6f9"/>
+            </svg>
+            <span class="brand-name-bold">ecohomes</span>
+          </div>
+        </div>
+
+        <!-- Brand 6 duplicate -->
+        <div class="brand-logo-card" aria-hidden="true">
+          <div class="brand-card-content brand-layout-col">
+            <svg class="brand-logo-svg" width="30" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M18 10h-1.26A8 8 0 1 0 9 20h9a5 5 0 0 0 0-10z"></path>
+            </svg>
+            <span class="brand-name-bold">omnicloud</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       OUR SOLUTIONS / TAILORED BUSINESS SOLUTIONS SECTION (Matching Screenshot)
+       ========================================================================== -->
+  <section class="solutions-showcase-section" id="services">
+    <!-- Subtle Background Wave Lines -->
+    <div class="solutions-bg-waves left-wave">
+      <svg viewBox="0 0 400 600" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M-50 100C100 150 200 80 250 250C300 420 180 520 120 600" stroke="#93c5fd" stroke-width="1.2" stroke-opacity="0.35"/>
+        <path d="M-80 130C70 180 170 110 220 280C270 450 150 550 90 630" stroke="#93c5fd" stroke-width="1.2" stroke-opacity="0.3"/>
+        <path d="M-110 160C40 210 140 140 190 310C240 480 120 580 60 660" stroke="#93c5fd" stroke-width="1.2" stroke-opacity="0.25"/>
+        <path d="M-140 190C10 240 110 170 160 340C210 510 90 610 30 690" stroke="#93c5fd" stroke-width="1.2" stroke-opacity="0.2"/>
+      </svg>
+    </div>
+    <div class="solutions-bg-waves right-wave">
+      <svg viewBox="0 0 400 600" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M450 100C300 150 200 80 150 250C100 420 220 520 280 600" stroke="#93c5fd" stroke-width="1.2" stroke-opacity="0.35"/>
+        <path d="M480 130C330 180 230 110 180 280C130 450 250 550 310 630" stroke="#93c5fd" stroke-width="1.2" stroke-opacity="0.3"/>
+        <path d="M510 160C360 210 260 140 210 310C160 480 280 580 340 660" stroke="#93c5fd" stroke-width="1.2" stroke-opacity="0.25"/>
+      </svg>
+    </div>
+
+    <div class="container">
+      <div class="solutions-showcase-grid">
+        
+        <!-- Cell 1: Section Header Block -->
+        <div class="solutions-header-block scroll-reveal">
+          <!-- Top Pill Badge -->
+          <div class="solutions-badge-pill">
+            <span class="badge-dot"></span>
+            <span>OUR SOLUTIONS</span>
+          </div>
+
+          <!-- Main Title -->
+          <h2 class="solutions-main-title">
+            Tailored Business<br>
+            Solutions for our<br>
+            <span class="title-blue-accent">Corporates.</span>
+          </h2>
+
+          <!-- View More Services Button -->
+          <div class="solutions-action-wrap">
+            <a href="404.html" class="btn-connect" style="padding: 13px 28px; font-size: 15px;">
+              View More Services
+              <span class="arrow-diag">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+                  <line x1="7" y1="17" x2="17" y2="7"></line>
+                  <polyline points="7 7 17 7 17 17"></polyline>
+                </svg>
+              </span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Cell 2: Strategic Growth Extend Planning -->
+        <div class="solution-card scroll-reveal" data-delay="100">
+          <div class="solution-icon-circle">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M12 2L3 7.5v9L6 18v-7.5l6-3.5 6 3.5V18l3-1.5v-9L12 2z"></path>
+              <path d="M12 9.5L9 11.2v6.8l3 1.5 3-1.5v-6.8L12 9.5z"></path>
+            </svg>
+          </div>
+          <h3 class="solution-card-title">Strategic Growth Extend Planning</h3>
+          <p class="solution-card-desc">
+            We combine data-driven insights with innovative thinking to deliver tailored solutions built around your goals.
+          </p>
+          <a href="404.html" class="solution-card-link" aria-label="Learn more about Strategic Growth Extend Planning">
+            <span>Learn More</span>
+            <span class="solution-arrow-circle">
+              <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+            </span>
+          </a>
+        </div>
+
+        <!-- Cell 3: Customer Journey Optimization -->
+        <div class="solution-card scroll-reveal" data-delay="200">
+          <div class="solution-icon-circle">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M4 11a9 9 0 0 1 9 9"></path>
+              <path d="M4 4a16 16 0 0 1 16 16"></path>
+              <circle cx="5" cy="19" r="1.5" fill="#ffffff"></circle>
+            </svg>
+          </div>
+          <h3 class="solution-card-title">Customer Journey Optimization</h3>
+          <p class="solution-card-desc">
+            Personalized journeys that build loyalty, improve satisfaction, and keep your business ahead.
+          </p>
+          <a href="404.html" class="solution-card-link" aria-label="Learn more about Customer Journey Optimization">
+            <span>Learn More</span>
+            <span class="solution-arrow-circle">
+              <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+            </span>
+          </a>
+        </div>
+
+        <!-- Cell 4: Sustainability Strategy Consulting -->
+        <div class="solution-card scroll-reveal" data-delay="300">
+          <div class="solution-icon-circle">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="12" cy="12" r="10"></circle>
+              <path d="M12 8v8"></path>
+              <path d="M8 12h8"></path>
+              <path d="M9 9l6 6"></path>
+            </svg>
+          </div>
+          <h3 class="solution-card-title">Sustainability Strategy Consulting</h3>
+          <p class="solution-card-desc">
+            Forward-thinking ESG and environmental compliance strategies designed for resilient enterprise operations.
+          </p>
+          <a href="404.html" class="solution-card-link" aria-label="Learn more about Sustainability Strategy Consulting">
+            <span>Learn More</span>
+            <span class="solution-arrow-circle">
+              <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+            </span>
+          </a>
+        </div>
+
+        <!-- Cell 5: Leadership Training & Coaching -->
+        <div class="solution-card scroll-reveal" data-delay="400">
+          <div class="solution-icon-circle">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+              <polygon points="12 2 19 7 12 12 5 7 12 2"></polygon>
+              <polygon points="12 12 19 17 12 22 5 17 12 12"></polygon>
+            </svg>
+          </div>
+          <h3 class="solution-card-title">Leadership Training & Coaching</h3>
+          <p class="solution-card-desc">
+            Empowering executive talent and C-suite leaders with adaptive management frameworks for high-performing teams.
+          </p>
+          <a href="404.html" class="solution-card-link" aria-label="Learn more about Leadership Training & Coaching">
+            <span>Learn More</span>
+            <span class="solution-arrow-circle">
+              <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+            </span>
+          </a>
+        </div>
+
+        <!-- Cell 6: Enterprise Cloud & Infrastructure -->
+        <div class="solution-card scroll-reveal" data-delay="500">
+          <div class="solution-icon-circle">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+              <polygon points="12 2 2 7 12 12 22 7 12 2"></polygon>
+              <polyline points="2 17 12 22 22 17"></polyline>
+              <polyline points="2 12 12 17 22 12"></polyline>
+            </svg>
+          </div>
+          <h3 class="solution-card-title">Enterprise Cloud & Infrastructure</h3>
+          <p class="solution-card-desc">
+            Scalable enterprise infrastructure, multi-cloud governance, and automated systems for continuous operational agility.
+          </p>
+          <a href="404.html" class="solution-card-link" aria-label="Learn more about Enterprise Cloud & Infrastructure">
+            <span>Learn More</span>
+            <span class="solution-arrow-circle">
+              <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+            </span>
+          </a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== PORTFOLIO SLIDER SECTION ========== -->
+  <section class="portfolio-work-section" id="portfolio">
+    <div class="portfolio-work-inner">
+
+      <!-- Section Header -->
+      <div class="portfolio-work-header">
+        <div class="section-badge-pill">
+          <span class="pill-dot">•</span> WORK WE'RE PROUD OF
+        </div>
+        <h2 class="portfolio-work-title">
+          Transcending Boundaries,<br>
+          Embracing <span class="blue-highlight">Success.</span>
+        </h2>
+      </div>
+
+      <!-- Slider Wrapper -->
+      <div class="portfolio-slider-wrapper">
+        <button class="portfolio-slider-btn portfolio-slider-btn--prev" id="pfPrev" aria-label="Previous">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"></polyline></svg>
+        </button>
+
+        <div class="portfolio-slider-viewport" id="pfViewport">
+          <div class="portfolio-slider-track" id="pfTrack">
+
+            <!-- Card 1 -->
+            <div class="portfolio-work-card">
+              <div class="portfolio-card-img-wrap">
+                <img src="asset/images/portfolio-slide-1.webp" alt="Momentum Project Delivery" loading="lazy">
+              </div>
+              <div class="portfolio-card-body">
+                <span class="portfolio-card-cat">— Management</span>
+                <h3 class="portfolio-card-title">Momentum Project Delivery Guide</h3>
+              </div>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="portfolio-work-card">
+              <div class="portfolio-card-img-wrap">
+                <img src="asset/images/portfolio-slide-2.webp" alt="Global Reach Expansion" loading="lazy">
+              </div>
+              <div class="portfolio-card-body">
+                <span class="portfolio-card-cat">— Business</span>
+                <h3 class="portfolio-card-title">Global Reach Expansion Plan</h3>
+              </div>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="portfolio-work-card">
+              <div class="portfolio-card-img-wrap">
+                <img src="asset/images/portfolio-slide-3.webp" alt="Environmental Impact Dashboard" loading="lazy">
+              </div>
+              <div class="portfolio-card-body">
+                <span class="portfolio-card-cat">— Analytics</span>
+                <h3 class="portfolio-card-title">Environmental Impact Dashboard</h3>
+              </div>
+            </div>
+
+            <!-- Card 4 -->
+            <div class="portfolio-work-card">
+              <div class="portfolio-card-img-wrap">
+                <img src="asset/images/portfolio-slide-4.webp" alt="Shield Compliance Framework" loading="lazy">
+              </div>
+              <div class="portfolio-card-body">
+                <span class="portfolio-card-cat">— Management</span>
+                <h3 class="portfolio-card-title">Shield Compliance Framework</h3>
+              </div>
+            </div>
+
+            <!-- Card 5 -->
+            <div class="portfolio-work-card">
+              <div class="portfolio-card-img-wrap">
+                <img src="asset/images/portfolio-slide-5.webp" alt="Digital Transformation Roadmap" loading="lazy">
+              </div>
+              <div class="portfolio-card-body">
+                <span class="portfolio-card-cat">— Technology</span>
+                <h3 class="portfolio-card-title">Digital Transformation Roadmap</h3>
+              </div>
+            </div>
+
+            <!-- Card 6 -->
+            <div class="portfolio-work-card">
+              <div class="portfolio-card-img-wrap">
+                <img src="asset/images/portfolio-slide-6.webp" alt="Capital Growth Strategy" loading="lazy">
+              </div>
+              <div class="portfolio-card-body">
+                <span class="portfolio-card-cat">— Finance</span>
+                <h3 class="portfolio-card-title">Capital Growth Strategy Report</h3>
+              </div>
+            </div>
+
+            <!-- Card 7 -->
+            <div class="portfolio-work-card">
+              <div class="portfolio-card-img-wrap">
+                <img src="asset/images/portfolio-slide-7.webp" alt="Enterprise Efficiency Blueprint" loading="lazy">
+              </div>
+              <div class="portfolio-card-body">
+                <span class="portfolio-card-cat">— Operations</span>
+                <h3 class="portfolio-card-title">Enterprise Efficiency Blueprint</h3>
+              </div>
+            </div>
+
+          </div><!-- /pfTrack -->
+        </div><!-- /pfViewport -->
+
+        <button class="portfolio-slider-btn portfolio-slider-btn--next" id="pfNext" aria-label="Next">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"></polyline></svg>
+        </button>
+      </div><!-- /portfolio-slider-wrapper -->
+
+      <!-- Dots -->
+      <div class="portfolio-dots" id="pfDots"></div>
+
+    </div><!-- /portfolio-work-inner -->
+  </section>
+  <!-- ========== /PORTFOLIO SLIDER SECTION ========== -->
+
+  <!-- ========== STATS COUNTER SECTION ========== -->
+  <section class="stats-counter-section" id="stats">
+    <!-- Decorative wave lines (SVG) -->
+    <div class="stats-wave-bg" aria-hidden="true">
+      <svg viewBox="0 0 1440 220" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M0,80 C200,160 400,0 600,80 C800,160 1000,20 1200,90 C1320,130 1380,80 1440,60 L1440,220 L0,220Z" fill="rgba(255,255,255,0.03)"/>
+        <path d="M0,120 C180,60 360,180 540,100 C720,30 900,160 1080,100 C1260,40 1360,110 1440,90 L1440,220 L0,220Z" fill="rgba(255,255,255,0.025)"/>
+        <circle cx="80" cy="80" r="120" fill="none" stroke="rgba(255,255,255,0.06)" stroke-width="1.5"/>
+        <circle cx="80" cy="80" r="200" fill="none" stroke="rgba(255,255,255,0.04)" stroke-width="1"/>
+        <circle cx="1360" cy="140" r="100" fill="none" stroke="rgba(255,255,255,0.06)" stroke-width="1.5"/>
+        <circle cx="1360" cy="140" r="180" fill="none" stroke="rgba(255,255,255,0.04)" stroke-width="1"/>
+      </svg>
+    </div>
+
+    <div class="stats-counter-inner">
+      <!-- Stat 1 -->
+      <div class="stat-item scroll-reveal" data-delay="100">
+        <div class="stat-number">
+          <span class="stat-count" data-target="85" data-suffix="%">0</span><span class="stat-unit">%</span>
+        </div>
+        <p class="stat-label">Projects Completed.</p>
+      </div>
+
+      <!-- Divider -->
+      <div class="stat-divider" aria-hidden="true"></div>
+
+      <!-- Stat 2 -->
+      <div class="stat-item scroll-reveal" data-delay="200">
+        <div class="stat-number">
+          <span class="stat-count" data-target="25" data-suffix="+">0</span><span class="stat-unit">+</span>
+        </div>
+        <p class="stat-label">Years Experience</p>
+      </div>
+
+      <!-- Divider -->
+      <div class="stat-divider" aria-hidden="true"></div>
+
+      <!-- Stat 3 -->
+      <div class="stat-item scroll-reveal" data-delay="300">
+        <div class="stat-number">
+          <span class="stat-count" data-target="22" data-suffix="K">0</span><span class="stat-unit">K</span>
+        </div>
+        <p class="stat-label">Projects Completed</p>
+      </div>
+
+      <!-- Divider -->
+      <div class="stat-divider" aria-hidden="true"></div>
+
+      <!-- Stat 4 -->
+      <div class="stat-item scroll-reveal" data-delay="400">
+        <div class="stat-number">
+          <span class="stat-count" data-target="180" data-suffix="+">0</span><span class="stat-unit">+</span>
+        </div>
+        <p class="stat-label">Awards Winnings</p>
+      </div>
+    </div>
+  </section>
+  <!-- ========== /STATS COUNTER SECTION ========== -->
+
+  <!-- ========== OUR PROCESS SECTION ========== -->
+  <section class="our-process-section" id="process">
+    <!-- Decorative background circles -->
+    <div class="process-bg-deco" aria-hidden="true">
+      <div class="process-bg-circle process-bg-circle--1"></div>
+      <div class="process-bg-circle process-bg-circle--2"></div>
+    </div>
+
+    <div class="our-process-inner">
+
+      <!-- LEFT COLUMN -->
+      <div class="process-left scroll-reveal">
+        <div class="section-badge-pill">
+          <span class="pill-dot">•</span> OUR PROCESS
+        </div>
+        <h2 class="process-main-title">
+          Simple Process,<br>
+          Powerful <span class="blue-highlight">Results.</span>
+        </h2>
+        <p class="process-desc">
+          We follow a streamlined, transparent process that ensures smooth execution
+          from start to finish. The result is measurable performance improvements and
+          sustainable business growth.
+        </p>
+        <div class="process-img-wrap">
+          <img src="asset/images/process-team.webp" alt="Our professional business team" loading="lazy">
+          <div class="process-floating-badge" aria-label="Process precision metric">
+            <div class="process-badge-icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="20 6 9 17 4 12"></polyline>
+              </svg>
+            </div>
+            <div class="process-badge-text">
+              <strong>99.4% Precision</strong>
+              <span>Verified Execution</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- CENTRE TIMELINE LINE -->
+      <div class="process-timeline-line" aria-hidden="true"></div>
+
+      <!-- RIGHT COLUMN -->
+      <div class="process-right">
+
+        <!-- Step 01 -->
+        <div class="process-step-card scroll-reveal" data-step="1" data-delay="100">
+          <div class="process-step-num-wrap">
+            <div class="process-step-num">01</div>
+          </div>
+          <div class="process-step-content">
+            <h3 class="process-step-title">Explore insights</h3>
+            <p class="process-step-desc">
+              We take a deep look into your business — identifying strengths, removing
+              bottlenecks, and uncovering hidden growth opportunities through workshops.
+            </p>
+            <a href="404.html" class="process-read-more">
+              Read More
+              <span class="process-arrow-btn">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+              </span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Step 02 -->
+        <div class="process-step-card scroll-reveal" data-step="2" data-delay="250">
+          <div class="process-step-num-wrap">
+            <div class="process-step-num">02</div>
+          </div>
+          <div class="process-step-content">
+            <h3 class="process-step-title">Craft strategies</h3>
+            <p class="process-step-desc">
+              With a clear understanding of your current position, we design a customized
+              strategy aligned with your objectives, whether it's scaling operations, improving
+              efficiency.
+            </p>
+            <a href="404.html" class="process-read-more">
+              Read More
+              <span class="process-arrow-btn">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+              </span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Step 03 -->
+        <div class="process-step-card" data-step="3">
+          <div class="process-step-num-wrap">
+            <div class="process-step-num">03</div>
+          </div>
+          <div class="process-step-content">
+            <h3 class="process-step-title">Deliver excellence</h3>
+            <p class="process-step-desc">
+              We work closely with your team to execute the strategy, providing hands-on
+              guidance, continuous performance tracking, and iterative improvements for
+              lasting results.
+            </p>
+            <a href="404.html" class="process-read-more">
+              Read More
+              <span class="process-arrow-btn">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+              </span>
+            </a>
+          </div>
+        </div>
+
+      </div><!-- /process-right -->
+    </div><!-- /our-process-inner -->
+  </section>
+  <!-- ========== /OUR PROCESS SECTION ========== -->
+
+  <!-- ========== MEET THE EXPERTS SECTION ========== -->
+  <section class="experts-section" id="team">
+    <div class="experts-inner">
+
+      <!-- Section Header -->
+      <div class="experts-header">
+        <div class="section-badge-pill">
+          <span class="pill-dot">•</span> MEET THE EXPERTS
+        </div>
+        <h2 class="experts-title">
+          The People Powering <span class="blue-highlight">Texon's</span><br>
+          Success
+        </h2>
+      </div>
+
+      <!-- Team Cards Grid -->
+      <div class="experts-grid">
+
+        <!-- Card 1 — Aarav Mehta -->
+        <div class="expert-card" data-aos="1" tabindex="0" role="button" aria-label="Aarav Mehta profile card. Click or touch to view details">
+          <div class="expert-card-img">
+            <img src="asset/images/team-aarav.webp" alt="Aarav Mehta — Founder & CEO" loading="lazy">
+            
+            <!-- Details Overlay on Touch/Hover -->
+            <div class="expert-details-overlay">
+              <div class="expert-details-content">
+                <span class="expert-badge-role">Founder &amp; CEO</span>
+                <h3 class="expert-details-name">Aarav Mehta</h3>
+                <p class="expert-details-bio">
+                  15+ years advising Fortune 500 executives on international M&amp;A, capital allocation, and enterprise transformation.
+                </p>
+                <div class="expert-skills-tags">
+                  <span class="skill-tag">M&amp;A Strategy</span>
+                  <span class="skill-tag">Executive Advisory</span>
+                  <span class="skill-tag">Capital Scaling</span>
+                </div>
+                <div class="expert-social-links">
+                  <a href="404.html" class="expert-social-btn" aria-label="Aarav Mehta LinkedIn">
+                    <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.46 10.9h2.79v8.37H6.46v-8.37M7.86 6.75a1.63 1.63 0 1 0 0 3.26 1.63 1.63 0 0 0 0-3.26Z"/></svg>
+                  </a>
+                  <a href="404.html" class="expert-social-btn" aria-label="Aarav Mehta Twitter X">
+                    <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+                  </a>
+                  <a href="404.html" class="expert-social-btn" aria-label="Email Aarav Mehta">
+                    <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="expert-card-name-bar">
+            <div class="expert-name-text">
+              <span class="expert-name">Aarav Mehta</span>
+              <span class="expert-role-subtitle">Founder &amp; CEO</span>
+            </div>
+            <button type="button" class="expert-touch-btn" aria-label="Toggle Aarav Mehta details">
+              <svg class="icon-touch-info" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="12" r="10"></circle>
+                <line x1="12" y1="16" x2="12" y2="12"></line>
+                <line x1="12" y1="8" x2="12.01" y2="8"></line>
+              </svg>
+              <svg class="icon-touch-close" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="18" y1="6" x2="6" y2="18"></line>
+                <line x1="6" y1="6" x2="18" y2="18"></line>
+              </svg>
+            </button>
+          </div>
+        </div>
+
+        <!-- Card 2 — Vikram Iyer -->
+        <div class="expert-card" data-aos="2" tabindex="0" role="button" aria-label="Vikram Iyer profile card. Click or touch to view details">
+          <div class="expert-card-img">
+            <img src="asset/images/team-vikram.webp" alt="Vikram Iyer — Chief Technology Officer" loading="lazy">
+            
+            <!-- Details Overlay on Touch/Hover -->
+            <div class="expert-details-overlay">
+              <div class="expert-details-content">
+                <span class="expert-badge-role">Chief Technology Officer</span>
+                <h3 class="expert-details-name">Vikram Iyer</h3>
+                <p class="expert-details-bio">
+                  Specialist in cloud-native modernization, zero-trust enterprise security, and AI-driven automation workflows.
+                </p>
+                <div class="expert-skills-tags">
+                  <span class="skill-tag">Cloud ERP</span>
+                  <span class="skill-tag">AI Systems</span>
+                  <span class="skill-tag">Cyber Resilience</span>
+                </div>
+                <div class="expert-social-links">
+                  <a href="404.html" class="expert-social-btn" aria-label="Vikram Iyer LinkedIn">
+                    <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.46 10.9h2.79v8.37H6.46v-8.37M7.86 6.75a1.63 1.63 0 1 0 0 3.26 1.63 1.63 0 0 0 0-3.26Z"/></svg>
+                  </a>
+                  <a href="404.html" class="expert-social-btn" aria-label="Vikram Iyer Twitter X">
+                    <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+                  </a>
+                  <a href="404.html" class="expert-social-btn" aria-label="Email Vikram Iyer">
+                    <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="expert-card-name-bar">
+            <div class="expert-name-text">
+              <span class="expert-name">Vikram Iyer</span>
+              <span class="expert-role-subtitle">Chief Technology Officer</span>
+            </div>
+            <button type="button" class="expert-touch-btn" aria-label="Toggle Vikram Iyer details">
+              <svg class="icon-touch-info" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="12" r="10"></circle>
+                <line x1="12" y1="16" x2="12" y2="12"></line>
+                <line x1="12" y1="8" x2="12.01" y2="8"></line>
+              </svg>
+              <svg class="icon-touch-close" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="18" y1="6" x2="6" y2="18"></line>
+                <line x1="6" y1="6" x2="18" y2="18"></line>
+              </svg>
+            </button>
+          </div>
+        </div>
+
+        <!-- Card 3 — Siddharth Verma -->
+        <div class="expert-card" data-aos="3" tabindex="0" role="button" aria-label="Siddharth Verma profile card. Click or touch to view details">
+          <div class="expert-card-img">
+            <img src="asset/images/team-siddharth.webp" alt="Siddharth Verma — VP of Enterprise Growth" loading="lazy">
+            
+            <!-- Details Overlay on Touch/Hover -->
+            <div class="expert-details-overlay">
+              <div class="expert-details-content">
+                <span class="expert-badge-role">VP Enterprise Growth</span>
+                <h3 class="expert-details-name">Siddharth Verma</h3>
+                <p class="expert-details-bio">
+                  Specializes in operational scaling, go-to-market acceleration, and sustainable multi-market client expansion.
+                </p>
+                <div class="expert-skills-tags">
+                  <span class="skill-tag">Growth Ops</span>
+                  <span class="skill-tag">Risk Advisory</span>
+                  <span class="skill-tag">Market Expansion</span>
+                </div>
+                <div class="expert-social-links">
+                  <a href="404.html" class="expert-social-btn" aria-label="Siddharth Verma LinkedIn">
+                    <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.46 10.9h2.79v8.37H6.46v-8.37M7.86 6.75a1.63 1.63 0 1 0 0 3.26 1.63 1.63 0 0 0 0-3.26Z"/></svg>
+                  </a>
+                  <a href="404.html" class="expert-social-btn" aria-label="Siddharth Verma Twitter X">
+                    <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+                  </a>
+                  <a href="404.html" class="expert-social-btn" aria-label="Email Siddharth Verma">
+                    <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="expert-card-name-bar">
+            <div class="expert-name-text">
+              <span class="expert-name">Siddharth Verma</span>
+              <span class="expert-role-subtitle">VP Enterprise Growth</span>
+            </div>
+            <button type="button" class="expert-touch-btn" aria-label="Toggle Siddharth Verma details">
+              <svg class="icon-touch-info" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="12" r="10"></circle>
+                <line x1="12" y1="16" x2="12" y2="12"></line>
+                <line x1="12" y1="8" x2="12.01" y2="8"></line>
+              </svg>
+              <svg class="icon-touch-close" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="18" y1="6" x2="6" y2="18"></line>
+                <line x1="6" y1="6" x2="18" y2="18"></line>
+              </svg>
+            </button>
+          </div>
+        </div>
+
+      </div><!-- /experts-grid -->
+    </div><!-- /experts-inner -->
+  </section>
+  <!-- ========== /MEET THE EXPERTS SECTION ========== -->
+
+  <!-- ========== CLIENT FEEDBACK / TESTIMONIALS SECTION ========== -->
+  <section class="testimonials-section" id="testimonials">
+    <div class="testimonials-inner">
+
+      <!-- Top Row: Title Left + Button Right -->
+      <div class="testimonials-top-row">
+        <div class="testimonials-heading">
+          <div class="section-badge-pill section-badge-pill--light">
+            <span class="pill-dot">•</span> CLIENT FEEDBACK
+          </div>
+          <h2 class="testimonials-title">
+            Client Journeys That<br>
+            Reflect Excellence
+          </h2>
+        </div>
+        <div class="testimonials-action">
+          <a href="#contact" class="btn-see-reviews">
+            See All Reviews
+            <span class="see-reviews-icon">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+            </span>
+          </a>
+        </div>
+      </div>
+
+      <!-- Slider -->
+      <div class="testi-slider-wrapper">
+        <div class="testi-slider-viewport" id="testiViewport">
+          <div class="testi-slider-track" id="testiTrack">
+
+            <!-- Card 1 -->
+            <div class="testi-card">
+              <div class="testi-card-header">
+                <img class="testi-avatar" src="asset/images/avatar-1.webp" alt="Ralph Edwards" loading="lazy">
+                <div class="testi-person">
+                  <span class="testi-name">Ralph Edwards</span>
+                  <span class="testi-role">Co. Founder</span>
+                </div>
+                <div class="testi-quote-icon">"</div>
+              </div>
+              <p class="testi-text">
+                "Dabus nisl aliquet congue tellus nascetur lectus sagpien mattis arcu
+                dictums augue volutpat felis etiam suspendisse rhoncus mauris dignissim ante"
+              </p>
+              <div class="testi-stars">
+                <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+              </div>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="testi-card">
+              <div class="testi-card-header">
+                <img class="testi-avatar" src="asset/images/avatar-2.webp" alt="Guy Hawkins" loading="lazy">
+                <div class="testi-person">
+                  <span class="testi-name">Guy Hawkins</span>
+                  <span class="testi-role">Sr. Marketing Manager</span>
+                </div>
+                <div class="testi-quote-icon">"</div>
+              </div>
+              <p class="testi-text">
+                "Dabus nisl aliquet congue tellus nascetur lectus sagpien mattis arcu
+                dictums augue volutpat felis etiam suspendisse rhoncus mauris dignissim ante"
+              </p>
+              <div class="testi-stars">
+                <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+              </div>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="testi-card">
+              <div class="testi-card-header">
+                <img class="testi-avatar" src="asset/images/avatar-3.webp" alt="David Smith" loading="lazy">
+                <div class="testi-person">
+                  <span class="testi-name">David Smith</span>
+                  <span class="testi-role">Finance</span>
+                </div>
+                <div class="testi-quote-icon">"</div>
+              </div>
+              <p class="testi-text">
+                "Dabus nisl aliquet congue tellus nascetur lectus sagpien mattis arcu
+                dictums augue volutpat felis etiam suspendisse rhoncus mauris dignissim ante"
+              </p>
+              <div class="testi-stars">
+                <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+              </div>
+            </div>
+
+            <!-- Card 4 (extra) -->
+            <div class="testi-card">
+              <div class="testi-card-header">
+                <img class="testi-avatar" src="asset/images/testi-sarah.webp" alt="Sarah Johnson" loading="lazy">
+                <div class="testi-person">
+                  <span class="testi-name">Sarah Johnson</span>
+                  <span class="testi-role">CEO &amp; Visionary</span>
+                </div>
+                <div class="testi-quote-icon">"</div>
+              </div>
+              <p class="testi-text">
+                "Working with Texon transformed how we approach strategy. Their team
+                delivered measurable results within weeks, far exceeding our expectations and
+                long-term growth targets."
+              </p>
+              <div class="testi-stars">
+                <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+              </div>
+            </div>
+
+            <!-- Card 5 (extra) -->
+            <div class="testi-card">
+              <div class="testi-card-header">
+                <img class="testi-avatar" src="asset/images/testi-michael.webp" alt="Michael Chen" loading="lazy">
+                <div class="testi-person">
+                  <span class="testi-name">Michael Chen</span>
+                  <span class="testi-role">Operations Director</span>
+                </div>
+                <div class="testi-quote-icon">"</div>
+              </div>
+              <p class="testi-text">
+                "The Texon team brought clarity and precision to our operations. Their
+                enterprise cloud solutions reduced overhead by 40% and improved our team's
+                overall efficiency dramatically."
+              </p>
+              <div class="testi-stars">
+                <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+              </div>
+            </div>
+
+            <!-- Card 6 (extra) -->
+            <div class="testi-card">
+              <div class="testi-card-header">
+                <img class="testi-avatar" src="asset/images/testi-emily.webp" alt="Emily Rodriguez" loading="lazy">
+                <div class="testi-person">
+                  <span class="testi-name">Emily Rodriguez</span>
+                  <span class="testi-role">HR Manager</span>
+                </div>
+                <div class="testi-quote-icon">"</div>
+              </div>
+              <p class="testi-text">
+                "Partnering with Texon was a game changer for our people strategy. Their
+                leadership training and customer-first approach aligned perfectly with our
+                company culture and vision."
+              </p>
+              <div class="testi-stars">
+                <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+              </div>
+            </div>
+
+          </div><!-- /testiTrack -->
+        </div><!-- /testiViewport -->
+      </div><!-- /testi-slider-wrapper -->
+
+      <!-- Dots -->
+      <div class="testi-dots" id="testiDots"></div>
+
+    </div><!-- /testimonials-inner -->
+  </section>
+  <!-- ========== /CLIENT FEEDBACK SECTION ========== -->
+
+  <!-- ========== BLOG / STRATEGIES & INSIGHTS SECTION ========== -->
+  <section class="blog-section" id="blog">
+    <div class="blog-inner">
+
+      <!-- Section Header -->
+      <div class="blog-header">
+        <div class="section-badge-pill">
+          <span class="pill-dot">•</span> READ BLOGS
+        </div>
+        <h2 class="blog-main-title">
+          Strategies and Insights.
+        </h2>
+      </div>
+
+      <!-- Blog Cards Grid -->
+      <div class="blog-grid">
+
+        <!-- Blog Card 1 -->
+        <article class="blog-card" data-blog="1">
+          <div class="blog-card-media">
+            <img src="asset/images/blog-1.webp" alt="Performance Optimization, Speed Improvements & Best Practices" loading="lazy">
+            <span class="blog-date-badge">
+              <span class="pill-dot">•</span> February 22, 2026
+            </span>
+          </div>
+          <div class="blog-card-content">
+            <h3 class="blog-card-title">
+              Performance Optimization, Speed Improvements &amp; Best Practices
+            </h3>
+            <a href="404.html" class="blog-read-more-link">
+              <span>Read More</span>
+              <span class="blog-arrow-circle">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+              </span>
+            </a>
+          </div>
+        </article>
+
+        <!-- Blog Card 2 -->
+        <article class="blog-card" data-blog="2">
+          <div class="blog-card-media">
+            <img src="asset/images/blog-2.webp" alt="Selling Tips, Listing Optimization & Marketplace Success" loading="lazy">
+            <span class="blog-date-badge">
+              <span class="pill-dot">•</span> January 10, 2026
+            </span>
+          </div>
+          <div class="blog-card-content">
+            <h3 class="blog-card-title">
+              Selling Tips, Listing Optimization &amp; Marketplace Success
+            </h3>
+            <a href="404.html" class="blog-read-more-link">
+              <span>Read More</span>
+              <span class="blog-arrow-circle">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+              </span>
+            </a>
+          </div>
+        </article>
+
+        <!-- Blog Card 3 -->
+        <article class="blog-card" data-blog="3">
+          <div class="blog-card-media">
+            <img src="asset/images/blog-3.webp" alt="Business Insights, Market Trends & Digital Product Strategy" loading="lazy">
+            <span class="blog-date-badge">
+              <span class="pill-dot">•</span> November 21, 2026
+            </span>
+          </div>
+          <div class="blog-card-content">
+            <h3 class="blog-card-title">
+              Business Insights, Market Trends &amp; Digital Product Strategy
+            </h3>
+            <a href="404.html" class="blog-read-more-link">
+              <span>Read More</span>
+              <span class="blog-arrow-circle">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+              </span>
+            </a>
+          </div>
+        </article>
+
+      </div><!-- /blog-grid -->
+    </div><!-- /blog-inner -->
+  </section>
+  <!-- ========== /BLOG SECTION ========== -->
+
+  <!-- ========== NEWSLETTER SECTION ========== -->
+  <section class="newsletter-section">
+    <div class="newsletter-container">
+      <div class="newsletter-card">
+
+        <!-- Background organic wave lines -->
+        <div class="newsletter-wave-deco" aria-hidden="true">
+          <svg class="newsletter-wave-lines" viewBox="0 0 1200 360" fill="none" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M-100,180 C200,40 400,320 700,140 C1000,-40 1100,240 1300,90" stroke="rgba(255,255,255,0.16)" stroke-width="2.5" fill="none"/>
+            <path d="M-60,240 C240,100 440,370 740,190 C1040,10 1140,290 1340,140" stroke="rgba(255,255,255,0.1)" stroke-width="2" fill="none"/>
+            <path d="M0,120 C300,-20 500,260 800,80 C1100,-90 1200,190 1400,50" stroke="rgba(255,255,255,0.12)" stroke-width="2" fill="none"/>
+            <path d="M-140,290 C160,150 360,420 660,250 C960,80 1060,330 1260,200" stroke="rgba(255,255,255,0.07)" stroke-width="1.5" fill="none"/>
+          </svg>
+        </div>
+
+        <div class="newsletter-card-grid">
+          <!-- Left side: title + subscription input -->
+          <div class="newsletter-info-pane">
+            <h2 class="newsletter-card-heading">
+              Subscribe Our Newsletter<br>
+              For Latest Updates
+            </h2>
+            <form class="newsletter-pill-form" id="newsletterForm" onsubmit="event.preventDefault(); alert('Thank you for subscribing to Texon updates!');">
+              <input type="email" class="newsletter-pill-input" placeholder="Enter email" required aria-label="Enter email">
+              <button type="submit" class="newsletter-pill-btn">
+                <span>Send Message</span>
+                <span class="newsletter-btn-icon-circle">
+                  <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#040817" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+                    <line x1="7" y1="17" x2="17" y2="7"></line>
+                    <polyline points="7 7 17 7 17 17"></polyline>
+                  </svg>
+                </span>
+              </button>
+            </form>
+          </div>
+
+          <!-- Right side: arched corporate team image -->
+          <div class="newsletter-media-pane">
+            <div class="newsletter-arch-frame">
+              <img src="asset/images/newsletter-team.webp" alt="Texon executive team" loading="lazy">
+            </div>
+          </div>
+        </div>
+
+      </div><!-- /newsletter-card -->
+    </div><!-- /newsletter-container -->
+  </section>
+  <!-- ========== /NEWSLETTER SECTION ========== -->
+
+  <!-- ========== CORPORATE FOOTER SECTION ========== -->
+  <footer class="site-corporate-footer" id="contact">
+    <div class="corporate-footer-inner">
+      <div class="footer-columns-grid">
+
+        <!-- Column 1: Brand & Headline -->
+        <div class="footer-brand-col">
+          <a href="index.html" class="footer-brand-logo" aria-label="Stackly Corporate Home">
+            <img src="asset/images/stackly_.webp" alt="Stackly" class="footer-logo-img">
+          </a>
+          <h3 class="footer-hero-headline">
+            Building Better<br>
+            Business from<br>
+            Together?
+          </h3>
+          <div class="footer-social-links">
+            <a href="404.html" class="footer-social-btn" aria-label="Facebook">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg>
+            </a>
+            <a href="404.html" class="footer-social-btn" aria-label="Instagram">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+            </a>
+            <a href="404.html" class="footer-social-btn" aria-label="X (Twitter)">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+            </a>
+            <a href="404.html" class="footer-social-btn" aria-label="LinkedIn">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6zM2 9h4v12H2z"/><circle cx="4" cy="4" r="2"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Column 2: Quick Links -->
+        <div class="footer-nav-col">
+          <h4 class="footer-nav-title">Quick Links</h4>
+          <ul class="footer-links-list">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="blog.html">Blog & News</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+
+        <!-- Column 3: Services -->
+        <div class="footer-nav-col">
+          <h4 class="footer-nav-title">Services</h4>
+          <ul class="footer-links-list">
+            <li><a href="404.html">Client Experience</a></li>
+            <li><a href="404.html">Learning Programs</a></li>
+            <li><a href="404.html">Strategic Planning</a></li>
+            <li><a href="404.html">Professional Training</a></li>
+            <li><a href="404.html">Sustainability Consulting</a></li>
+          </ul>
+        </div>
+
+        <!-- Column 4: Our Office -->
+        <div class="footer-contact-col">
+          <h4 class="footer-nav-title">Our Office</h4>
+          <div class="footer-office-content">
+            <p class="footer-address-text">
+              4812 Marlen Heights,<br>
+              South Elric, TX 78144-2190, USA
+            </p>
+            <div class="footer-hours-row">
+              <span class="footer-calendar-icon" aria-hidden="true">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#2563eb" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>
+              </span>
+              <span class="footer-hours-text">Mon-Fri 09am-06pm</span>
+            </div>
+            <div class="footer-contact-entry">
+              <span class="footer-label-dim">Phone:</span>
+              <a href="tel:+10095447818" class="footer-contact-val">+1 (009) 544-7818</a>
+            </div>
+            <div class="footer-contact-entry">
+              <span class="footer-label-dim">Mail:</span>
+              <a href="mailto:help@Stackly.com" class="footer-contact-val">help@Stackly.com</a>
+            </div>
+          </div>
+        </div>
+
+      </div><!-- /footer-columns-grid -->
+
+      <!-- Bottom Copyright Row -->
+      <div class="corporate-footer-bottom">
+        <p>© 2026 Stackly Corporate. All Rights Reserved.</p>
+        <div class="footer-legal-row">
+          <a href="404.html">Privacy Policy</a>
+          <span>•</span>
+          <a href="404.html">Terms of Service</a>
+          <span>•</span>
+          <a href="404.html">Security</a>
+        </div>
+      </div>
+
+    </div><!-- /corporate-footer-inner -->
+  </footer>
+  <!-- ========== /CORPORATE FOOTER SECTION ========== -->
+
+  <!-- Back to Top Floating Button -->
+  <button type="button" class="btn-back-to-top" id="backToTopBtn" aria-label="Back to Top">
+    <svg class="progress-ring" width="48" height="48">
+      <circle class="progress-ring-circle" stroke="#2563eb" stroke-width="2.5" fill="transparent" r="20" cx="24" cy="24"/>
+    </svg>
+    <svg class="arrow-up" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#0f172a" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+      <line x1="12" y1="19" x2="12" y2="5"></line>
+      <polyline points="5 12 12 5 19 12"></polyline>
+    </svg>
+  </button>
+
+  <!-- ==========================================================================
+       MODALS & DRAWERS
+       ========================================================================== -->
+
+  <!-- 1. Search Modal -->
+  <div class="modal-overlay" id="searchModal" aria-hidden="true">
+    <div class="search-box-modal">
+      <div class="search-header-row">
+        <h3 style="font-size: 20px; font-weight: 700;">Search Texon Corporate</h3>
+        <button type="button" class="close-btn" id="searchCloseBtn" aria-label="Close Search">✕</button>
+      </div>
+      <div class="search-input-wrap">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#64748b" stroke-width="2">
+          <circle cx="11" cy="11" r="8"></circle>
+          <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+        </svg>
+        <input type="text" id="searchInput" placeholder="Search services, case studies, insights...">
+      </div>
+      <div style="font-size: 13.5px; color: #64748b;">
+        Popular: <a href="#services" style="color: #2563eb; text-decoration: underline;">Financial Advisory</a>, <a href="#services" style="color: #2563eb; text-decoration: underline;">Cloud Transformation</a>, <a href="#portfolio" style="color: #2563eb; text-decoration: underline;">M&A Advisory</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- 2. Mobile Nav Drawer -->
+  <div class="drawer-container" id="mobileMenuDrawer">
+    <div class="drawer-header">
+      <a href="index.html" class="brand-logo" aria-label="Stackly Home">
+        <img src="asset/images/stackly_.webp" alt="Stackly" class="brand-logo-img" style="height: 32px;">
+      </a>
+      <button type="button" class="close-btn" id="mobileMenuCloseBtn">✕</button>
+    </div>
+    <div class="drawer-body">
+      <nav class="mobile-nav-links">
+        <a href="index.html" class="mobile-nav-link" onclick="document.getElementById('mobileMenuDrawer').classList.remove('active');">Home <span>→</span></a>
+        <a href="about.html" class="mobile-nav-link" onclick="document.getElementById('mobileMenuDrawer').classList.remove('active');">About <span>→</span></a>
+        <a href="portfolio.html" class="mobile-nav-link" onclick="document.getElementById('mobileMenuDrawer').classList.remove('active');">Portfolio <span>→</span></a>
+        <a href="blog.html" class="mobile-nav-link" onclick="document.getElementById('mobileMenuDrawer').classList.remove('active');">Blog <span>→</span></a>
+        <a href="contact.html" class="mobile-nav-link" onclick="document.getElementById('mobileMenuDrawer').classList.remove('active');">Contact <span>→</span></a>
+      </nav>
+      <div style="margin-top: 28px; display: flex; flex-direction: column; gap: 12px;">
+        <a href="login.html" class="btn-login" id="mobileLoginBtn" style="width: 100%; justify-content: center;">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M15 3h4a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2h-4"></path>
+            <polyline points="10 17 15 12 10 7"></polyline>
+            <line x1="15" y1="12" x2="3" y2="12"></line>
+          </svg>
+          <span>Login / Sign In</span>
+        </a>
+        <a href="404.html" class="btn-connect" style="width: 100%; justify-content: center; display: inline-flex;" onclick="document.getElementById('mobileMenuDrawer').classList.remove('active');">
+          Let's Connect ↗
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- 3. Corporate Login Modal -->
+  <div class="modal-overlay" id="loginModal" aria-hidden="true">
+    <div class="login-box-modal">
+      <div class="login-header-row">
+        <div>
+          <span class="section-tag" style="margin-bottom: 6px; font-size: 11.5px; padding: 4px 10px;">Portal Access</span>
+          <h3 style="font-size: 22px; font-weight: 800; color: #0f172a;">Sign In to Texon</h3>
+        </div>
+        <button type="button" class="close-btn" id="loginCloseBtn" aria-label="Close Login">✕</button>
+      </div>
+
+      <form class="login-form-inner" onsubmit="event.preventDefault(); window.location.href='dashboard-client.html';">
+        <div class="form-group">
+          <label for="loginEmail" class="form-label">Corporate Email Address</label>
+          <div class="form-input-wrap">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#64748b" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+            <input type="email" id="loginEmail" placeholder="executive@company.com" required>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 6px;">
+            <label for="loginPassword" class="form-label" style="margin-bottom: 0;">Password</label>
+            <a href="#" style="font-size: 13px; color: #2563eb; font-weight: 600;">Forgot password?</a>
+          </div>
+          <div class="form-input-wrap">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#64748b" stroke-width="2"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect><path d="M7 11V7a5 5 0 0 1 10 0v4"></path></svg>
+            <input type="password" id="loginPassword" placeholder="••••••••" required>
+          </div>
+        </div>
+
+        <div style="display: flex; align-items: center; justify-content: space-between; margin: 16px 0 24px;">
+          <label style="display: flex; align-items: center; gap: 8px; font-size: 14px; color: #475569; cursor: pointer;">
+            <input type="checkbox" style="width: 16px; height: 16px; accent-color: #2563eb;" checked> Remember this device
+          </label>
+          <span style="font-size: 12.5px; color: #10b981; font-weight: 600;">🔒 256-bit Encrypted</span>
+        </div>
+
+        <button type="submit" class="btn-connect" style="width: 100%; justify-content: center; padding: 13px 24px; font-size: 15px; border-radius: 12px;">
+          Sign In to Corporate Portal
+          <span class="arrow-diag">→</span>
+        </button>
+      </form>
+
+      <div style="margin-top: 20px; text-align: center; font-size: 14px; color: #64748b;">
+        Need an enterprise workspace? <a href="signup.html" style="color: #2563eb; font-weight: 700;">Register Account</a> • <a href="login.html" style="color: #2563eb; font-weight: 700;">Full Portal Page</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- 3. Shopping Cart Drawer (5 Items) -->
+  <div class="drawer-container" id="cartDrawer">
+    <div class="drawer-header">
+      <h3 class="drawer-title">Selected Solutions (5)</h3>
+      <button type="button" class="close-btn" id="cartCloseBtn">✕</button>
+    </div>
+    <div class="drawer-body">
+      <div class="cart-items-list">
+        <div class="cart-item-row">
+          <div class="cart-item-thumb"><img src="asset/images/portfolio-1.webp" alt="M&A Advisory"></div>
+          <div class="cart-item-info">
+            <h6>M&A Advisory Suite</h6>
+            <div class="cart-item-price">$4,500 / mo</div>
+          </div>
+        </div>
+        <div class="cart-item-row">
+          <div class="cart-item-thumb"><img src="asset/images/portfolio-2.webp" alt="AI Analytics"></div>
+          <div class="cart-item-info">
+            <h6>Enterprise AI Core</h6>
+            <div class="cart-item-price">$3,200 / mo</div>
+          </div>
+        </div>
+        <div class="cart-item-row">
+          <div class="cart-item-thumb"><img src="asset/images/portfolio-3.webp" alt="Cloud Transformation"></div>
+          <div class="cart-item-info">
+            <h6>Cloud Architecture Pack</h6>
+            <div class="cart-item-price">$2,800 / mo</div>
+          </div>
+        </div>
+        <div class="cart-item-row">
+          <div class="cart-item-thumb"><img src="asset/images/about-corp.webp" alt="Security Defense"></div>
+          <div class="cart-item-info">
+            <h6>Corporate Governance Kit</h6>
+            <div class="cart-item-price">$1,950 / mo</div>
+          </div>
+        </div>
+        <div class="cart-item-row">
+          <div class="cart-item-thumb"><img src="asset/images/hero-slide-1.webp" alt="Executive Coaching"></div>
+          <div class="cart-item-info">
+            <h6>Executive Advisory Pass</h6>
+            <div class="cart-item-price">$5,000 / mo</div>
+          </div>
+        </div>
+      </div>
+      <div style="border-top: 1px solid #e2e8f0; padding-top: 18px; margin-bottom: 20px;">
+        <div style="display: flex; justify-content: space-between; font-weight: 700; font-size: 18px;">
+          <span>Estimated Total:</span>
+          <span style="color: #2563eb;">$17,450 / mo</span>
+        </div>
+      </div>
+      <a href="404.html" class="btn-connect" style="width: 100%; justify-content: center; display: inline-flex;" onclick="document.getElementById('cartDrawer').classList.remove('active');">
+        Proceed to Corporate Onboarding ↗
+      </a>
+    </div>
+  </div>
+
+  <!-- 4. Theme Settings Drawer -->
+  <div class="drawer-container" id="settingsDrawer">
+    <div class="drawer-header">
+      <h3 class="drawer-title">Theme Customizer</h3>
+      <button type="button" class="close-btn" id="settingsCloseBtn">✕</button>
+    </div>
+    <div class="drawer-body">
+      <h4 style="font-size: 15px; font-weight: 700; margin-bottom: 14px;">Select Primary Brand Accent:</h4>
+      <div style="display: flex; gap: 12px; margin-bottom: 28px;">
+        <div class="theme-color-option" data-color="#2563eb" style="width: 38px; height: 38px; border-radius: 50%; background: #2563eb; cursor: pointer; box-shadow: 0 3px 8px rgba(37,99,235,0.4);" title="Royal Blue (Default)"></div>
+        <div class="theme-color-option" data-color="#0284c7" style="width: 38px; height: 38px; border-radius: 50%; background: #0284c7; cursor: pointer;" title="Ocean Sky"></div>
+        <div class="theme-color-option" data-color="#4f46e5" style="width: 38px; height: 38px; border-radius: 50%; background: #4f46e5; cursor: pointer;" title="Indigo Enterprise"></div>
+        <div class="theme-color-option" data-color="#0d9488" style="width: 38px; height: 38px; border-radius: 50%; background: #0d9488; cursor: pointer;" title="Teal Modern"></div>
+      </div>
+
+      <h4 style="font-size: 15px; font-weight: 700; margin-bottom: 12px;">Slider Information:</h4>
+      <p style="font-size: 14px; color: #64748b; line-height: 1.6;">
+        5 Corporate hero slides active in WebP format (< 100KB each) with auto-play every 5s, touch swipe enabled, and keyboard arrow controls.
+      </p>
+    </div>
+  </div>
+
+  <!-- Core Theme Script (Inside asset folder) -->
+  <script src="asset/js/main.js"></script>
+</body>
+</html>

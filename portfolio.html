@@ -1,0 +1,599 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Portfolio &amp; Case Studies | Texon Corporate Business</title>
+  <meta name="description" content="Explore our track record of transforming corporate challenges into sustainable, measurable milestones.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="asset/css/style.css">
+  <link rel="stylesheet" href="asset/css/mobile-responsive.css">
+</head>
+<body>
+  <!-- Custom Cursor Elements -->
+  <div id="cursorRing" aria-hidden="true"></div>
+  <div id="cursorDot" aria-hidden="true"></div>
+
+  <!-- Floating Quick Cart Trigger (Right Edge) -->
+  <aside class="floating-quick-tools" aria-label="Page Quick Tools">
+    <button type="button" class="btn-quick-cart" id="quickCartBtn" aria-label="View Corporate Cart">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+        <circle cx="9" cy="21" r="1"></circle>
+        <circle cx="20" cy="21" r="1"></circle>
+        <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+      </svg>
+      <span class="cart-badge-count" id="cartCountBadge">5</span>
+    </button>
+    <button type="button" class="btn-theme-gear" id="themeGearBtn" aria-label="Theme Color Customizer">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+        <circle cx="12" cy="12" r="3"></circle>
+        <path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"></path>
+      </svg>
+    </button>
+  </aside>
+
+  <!-- Main Corporate Header -->
+  <header class="site-header scrolled" id="mainHeader">
+    <div class="header-container">
+      <!-- Brand Logo -->
+      <a href="index.html" class="brand-logo" aria-label="Stackly Corporate Home">
+        <img src="asset/images/stackly_.webp" alt="Stackly" class="brand-logo-img">
+      </a>
+
+      <!-- Desktop Navigation Menu -->
+      <nav class="desktop-nav" aria-label="Primary Navigation">
+        <ul class="nav-list">
+          <li class="nav-item">
+            <a href="index.html" class="nav-link">Home</a>
+          </li>
+          <li class="nav-item">
+            <a href="about.html" class="nav-link">About</a>
+          </li>
+          <li class="nav-item active">
+            <a href="portfolio.html" class="nav-link">Portfolio</a>
+          </li>
+          <li class="nav-item">
+            <a href="blog.html" class="nav-link">Blog</a>
+          </li>
+          <li class="nav-item">
+            <a href="contact.html" class="nav-link">Contact</a>
+          </li>
+        </ul>
+      </nav>
+
+      <!-- Header Right Tools -->
+      <div class="header-actions">
+        <!-- Search Trigger Button -->
+        <a href="404.html" class="btn-icon-round" id="searchTriggerBtn" aria-label="Open Search">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="11" cy="11" r="8"></circle>
+            <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+          </svg>
+        </a>
+
+        <a href="login.html" class="btn-login" id="loginTriggerBtn" aria-label="Client Login">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M15 3h4a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2h-4"></path>
+            <polyline points="10 17 15 12 10 7"></polyline>
+            <line x1="15" y1="12" x2="3" y2="12"></line>
+          </svg>
+          <span>Login</span>
+        </a>
+
+        <a href="404.html" class="btn-connect" aria-label="Let's Connect">
+          <span>Let's Connect</span>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="7" y1="17" x2="17" y2="7"></line>
+            <polyline points="7 7 17 7 17 17"></polyline>
+          </svg>
+        </a>
+
+        <button type="button" class="btn-hamburger" id="hamburgerBtn" aria-label="Toggle Mobile Navigation">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ========== SUBPAGE HERO SECTION ========== -->
+  <section class="page-hero-banner page-hero-banner--portfolio" id="hero">
+    <div class="page-hero-glow-1"></div>
+    <div class="page-hero-glow-2"></div>
+    <div class="page-hero-deco" aria-hidden="true">
+      <svg viewBox="0 0 1440 320" preserveAspectRatio="none">
+        <path d="M0,160 C320,300 420,60 640,160 C860,260 1120,40 1440,120 L1440,320 L0,320 Z" fill="rgba(255,255,255,0.02)"/>
+      </svg>
+    </div>
+    <div class="page-hero-inner">
+      <div class="section-badge-pill section-badge-pill--light page-hero-pill">
+        <span class="pill-dot">•</span> OUR PORTFOLIO
+      </div>
+      <h1 class="page-hero-title">
+        Transcending Boundaries,<br>
+        <span style="color: #60a5fa;">Embracing Success.</span>
+      </h1>
+      <p class="page-hero-subtitle">
+        Explore our comprehensive portfolio of corporate achievements, strategic milestones, and enterprise solutions across industries.
+      </p>
+      <nav class="page-hero-breadcrumb" aria-label="Breadcrumb">
+        <a href="index.html">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path><polyline points="9 22 9 12 15 12 15 22"></polyline></svg>
+          Home
+        </a>
+        <span class="breadcrumb-separator">/</span>
+        <span class="breadcrumb-current">Portfolio</span>
+      </nav>
+    </div>
+  </section>
+  <!-- ========== /SUBPAGE HERO SECTION ========== -->
+
+  <!-- Content Section Container (Ready for additional sections based on your screenshots) -->
+  <main class="subpage-content-area" id="pageContent">
+
+    <!-- ========== PORTFOLIO SHOWCASE GALLERY (Matching Screenshot) ========== -->
+    <section class="portfolio-gallery-section" id="portfolioGallery" aria-label="Portfolio Projects Showcase">
+      <div class="portfolio-gallery-container">
+        
+        <div class="portfolio-masonry-grid">
+          
+          <!-- Card 1: Sales and Marketing Strategy (Exact from Screenshot) -->
+          <article class="portfolio-showcase-card">
+            <div class="portfolio-showcase-media">
+              <img src="asset/images/portfolio-sales-strategy.webp" alt="Sales and Marketing Strategy - Business Strategy" width="800" height="598" loading="lazy">
+              <div class="portfolio-card-badge">
+                <span class="portfolio-badge-category">— Business Strategy</span>
+                <h3 class="portfolio-badge-title">Sales and Marketing Strategy</h3>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 2: Client Acquisition Highlights (Exact from Screenshot) -->
+          <article class="portfolio-showcase-card">
+            <div class="portfolio-showcase-media">
+              <img src="asset/images/portfolio-client-acquisition.webp" alt="Client Acquisition Highlights - Corporate Projects" width="800" height="598" loading="lazy">
+              <div class="portfolio-card-badge">
+                <span class="portfolio-badge-category">— Corporate Projects</span>
+                <h3 class="portfolio-badge-title">Client Acquisition Highlights</h3>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 3: Enterprise Technology Advisory (Matching Screenshot Row 2) -->
+          <article class="portfolio-showcase-card">
+            <div class="portfolio-showcase-media">
+              <img src="asset/images/portfolio-tech-advisory.webp" alt="Enterprise Technology Advisory - Digital Transformation" width="800" height="598" loading="lazy">
+              <div class="portfolio-card-badge">
+                <span class="portfolio-badge-category">— Digital Innovation</span>
+                <h3 class="portfolio-badge-title">Enterprise Technology Advisory</h3>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 4: Next-Gen Smart Facility Expansion (Matching Screenshot Row 2) -->
+          <article class="portfolio-showcase-card">
+            <div class="portfolio-showcase-media">
+              <img src="asset/images/portfolio-smart-facility.webp" alt="Next-Gen Smart Facility Expansion - Global Infrastructure" width="800" height="598" loading="lazy">
+              <div class="portfolio-card-badge">
+                <span class="portfolio-badge-category">— Global Infrastructure</span>
+                <h3 class="portfolio-badge-title">Next-Gen Smart Facility Expansion</h3>
+              </div>
+            </div>
+          </article>
+
+        </div><!-- /portfolio-masonry-grid -->
+
+      </div>
+    </section>
+
+    <!-- ========== MEASURABLE IMPACT METRICS & CASE STUDY SPOTLIGHT ========== -->
+    <section class="portfolio-metrics-section" id="metrics" aria-label="Transformation Impact and Metrics">
+      <div class="portfolio-metrics-container">
+        
+        <!-- Section Header -->
+        <div class="portfolio-metrics-header">
+          <div class="metrics-pill-badge">
+            <span class="bullet-dot">•</span> PROVEN TRANSFORMATION
+          </div>
+          <h2 class="metrics-main-title">
+            Driving Measurable Value Across Every Engagement
+          </h2>
+          <p class="metrics-sub-title">
+            Our strategic methodologies deliver tangible ROI, hyper-scaled operational velocity, and resilient enterprise architectures across global organizations.
+          </p>
+        </div>
+
+        <!-- 4-Stat Metric Counters -->
+        <div class="portfolio-stats-grid">
+          
+          <!-- Stat 1 -->
+          <div class="stat-counter-card">
+            <div class="stat-icon-wrap" aria-hidden="true">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon>
+              </svg>
+            </div>
+            <div class="stat-number-display">
+              +<span class="counter-num" data-target="340">0</span>%
+            </div>
+            <div class="stat-metric-label">Operational Velocity</div>
+            <p class="stat-metric-desc">Acceleration in cross-functional product release cycles and sprint deliveries.</p>
+          </div>
+
+          <!-- Stat 2 -->
+          <div class="stat-counter-card">
+            <div class="stat-icon-wrap" aria-hidden="true">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                <path d="M9 12l2 2 4-4"></path>
+              </svg>
+            </div>
+            <div class="stat-number-display">
+              <span class="counter-num" data-target="99">0</span>.99%
+            </div>
+            <div class="stat-metric-label">Enterprise Uptime SLA</div>
+            <p class="stat-metric-desc">Mission-critical high availability and fault-tolerant multi-cloud infrastructure.</p>
+          </div>
+
+          <!-- Stat 3 -->
+          <div class="stat-counter-card">
+            <div class="stat-icon-wrap" aria-hidden="true">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="12" y1="1" x2="12" y2="23"></line>
+                <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path>
+              </svg>
+            </div>
+            <div class="stat-number-display">
+              $<span class="counter-num" data-target="14">0</span>.8M
+            </div>
+            <div class="stat-metric-label">Cost Reductions</div>
+            <p class="stat-metric-desc">Average annualized cloud infrastructure savings realized within the first year.</p>
+          </div>
+
+          <!-- Stat 4 -->
+          <div class="stat-counter-card">
+            <div class="stat-icon-wrap" aria-hidden="true">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="12" r="10"></circle>
+                <line x1="2" y1="12" x2="22" y2="12"></line>
+                <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
+              </svg>
+            </div>
+            <div class="stat-number-display">
+              <span class="counter-num" data-target="250">0</span>+
+            </div>
+            <div class="stat-metric-label">Global Deployments</div>
+            <p class="stat-metric-desc">Enterprise system launches orchestrated across North America, Europe & APAC.</p>
+          </div>
+
+        </div>
+
+        <!-- Featured Case Study Spotlight Card -->
+        <div class="case-study-spotlight-box">
+          <div class="case-study-content">
+            <div class="case-study-tag">
+              <span class="pulse-dot" aria-hidden="true"></span>
+              Featured Client Case Study
+            </div>
+            <h3 class="case-study-heading">
+              Modernizing Cloud Core Banking Infrastructure & Real-Time Analytics
+            </h3>
+            <blockquote class="case-study-quote">
+              “Texon re-engineered our distributed transaction processing pipeline, cutting latency by 72% while guaranteeing absolute zero-trust compliance during a massive cloud migration.”
+            </blockquote>
+            <ul class="case-study-checklist">
+              <li>
+                <span class="checklist-icon-bullet" aria-hidden="true">✓</span>
+                <span>Multi-Region Kubernetes orchestration with sub-minute disaster recovery</span>
+              </li>
+              <li>
+                <span class="checklist-icon-bullet" aria-hidden="true">✓</span>
+                <span>High-throughput event streaming handling 120,000 transaction requests/sec</span>
+              </li>
+              <li>
+                <span class="checklist-icon-bullet" aria-hidden="true">✓</span>
+                <span>SOC2 Type II, ISO 27001 & financial banking regulatory compliance</span>
+              </li>
+            </ul>
+            <div class="case-study-cta-group">
+              <a href="contact.html" class="btn-spotlight-primary">
+                <span>Start Your Case Study</span>
+                <span aria-hidden="true">↗</span>
+              </a>
+              <a href="portfolio.html#portfolioGallery" class="btn-spotlight-secondary">
+                <span>View Full Showcase</span>
+              </a>
+            </div>
+          </div>
+
+          <div class="case-study-media-box">
+            <img src="asset/images/portfolio-impact-spotlight.webp" alt="Executive team handshake celebrating successful cloud migration" width="800" height="598" loading="lazy">
+            <div class="spotlight-floating-card">
+              <div class="floating-card-stat">+72%</div>
+              <div class="floating-card-label">Latency Reduction<br>Zero Downtime</div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ========== NEWSLETTER SECTION ========== -->
+  <section class="newsletter-section">
+    <div class="newsletter-container">
+      <div class="newsletter-card">
+        <div class="newsletter-wave-deco" aria-hidden="true">
+          <svg class="newsletter-wave-lines" viewBox="0 0 1200 360" fill="none" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M-100,180 C200,40 400,320 700,140 C1000,-40 1100,240 1300,90" stroke="rgba(255,255,255,0.16)" stroke-width="2.5" fill="none"/>
+            <path d="M-60,240 C240,100 440,370 740,190 C1040,10 1140,290 1340,140" stroke="rgba(255,255,255,0.1)" stroke-width="2" fill="none"/>
+            <path d="M0,120 C300,-20 500,260 800,80 C1100,-90 1200,190 1400,50" stroke="rgba(255,255,255,0.12)" stroke-width="2" fill="none"/>
+          </svg>
+        </div>
+        <div class="newsletter-card-grid">
+          <div class="newsletter-info-pane">
+            <h2 class="newsletter-card-heading">
+              Subscribe Our Newsletter<br>
+              For Latest Updates
+            </h2>
+            <form class="newsletter-pill-form" id="newsletterForm" onsubmit="event.preventDefault(); alert('Thank you for subscribing to Texon updates!');">
+              <input type="email" class="newsletter-pill-input" placeholder="Enter email" required aria-label="Enter email">
+              <button type="submit" class="newsletter-pill-btn">
+                <span>Send Message</span>
+                <span class="newsletter-btn-icon-circle">
+                  <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#040817" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+                    <line x1="7" y1="17" x2="17" y2="7"></line>
+                    <polyline points="7 7 17 7 17 17"></polyline>
+                  </svg>
+                </span>
+              </button>
+            </form>
+          </div>
+          <div class="newsletter-media-pane">
+            <div class="newsletter-arch-frame">
+              <img src="asset/images/newsletter-team.webp" alt="Texon executive team" loading="lazy">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- ========== /NEWSLETTER SECTION ========== -->
+
+  <!-- ========== CORPORATE FOOTER SECTION ========== -->
+  <footer class="site-corporate-footer" id="contact">
+    <div class="corporate-footer-inner">
+      <div class="footer-columns-grid">
+        <!-- Column 1: Brand & Headline -->
+        <div class="footer-brand-col">
+          <a href="index.html" class="footer-brand-logo" aria-label="Stackly Corporate Home">
+            <img src="asset/images/stackly_.webp" alt="Stackly" class="footer-logo-img">
+          </a>
+          <h3 class="footer-hero-headline">
+            Building Better<br>
+            Business from<br>
+            Together?
+          </h3>
+          <div class="footer-social-links">
+            <a href="404.html" class="footer-social-btn" aria-label="Facebook">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg>
+            </a>
+            <a href="404.html" class="footer-social-btn" aria-label="Instagram">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+            </a>
+            <a href="404.html" class="footer-social-btn" aria-label="X (Twitter)">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+            </a>
+            <a href="404.html" class="footer-social-btn" aria-label="LinkedIn">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6zM2 9h4v12H2z"/><circle cx="4" cy="4" r="2"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <div class="footer-nav-col">
+          <h4 class="footer-nav-title">Quick Links</h4>
+          <ul class="footer-links-list">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="blog.html">Blog & News</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-nav-col">
+         <h4 class="footer-nav-title">Services</h4>
+          <ul class="footer-links-list">
+            <li><a href="404.html">Client Experience</a></li>
+            <li><a href="404.html">Learning Programs</a></li>
+            <li><a href="404.html">Strategic Planning</a></li>
+            <li><a href="404.html">Professional Training</a></li>
+            <li><a href="404.html">Sustainability Consulting</a></li>
+      
+          </ul>
+        </div>
+
+        <div class="footer-contact-col">
+          <h4 class="footer-nav-title">Our Office</h4>
+          <div class="footer-office-content">
+            <p class="footer-address-text">
+              4812 Marlen Heights,<br>
+              South Elric, TX 78144-2190, USA
+            </p>
+            <div class="footer-hours-row">
+              <span class="footer-calendar-icon" aria-hidden="true">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#2563eb" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>
+              </span>
+              <span class="footer-hours-text">Mon-Fri 09am-06pm</span>
+            </div>
+            <div class="footer-contact-entry">
+              <span class="footer-label-dim">Phone:</span>
+              <a href="tel:+10095447818" class="footer-contact-val">+1 (009) 544-7818</a>
+            </div>
+            <div class="footer-contact-entry">
+              <span class="footer-label-dim">Mail:</span>
+              <a href="mailto:help@Stackly.com" class="footer-contact-val">help@Stackly.com</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="corporate-footer-bottom">
+        <p>© 2026 Stackly Corporate. All Rights Reserved.</p>
+        <div class="footer-legal-row">
+          <a href="404.html">Privacy Policy</a>
+          <span>•</span>
+          <a href="404.html">Terms of Service</a>
+          <span>•</span>
+          <a href="404.html">Security</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- ========== /CORPORATE FOOTER SECTION ========== -->
+
+  <!-- Back to Top Floating Button -->
+  <button type="button" class="btn-back-to-top" id="backToTopBtn" aria-label="Back to Top">
+    <svg class="progress-ring" width="48" height="48">
+      <circle class="progress-ring-circle" stroke="#2563eb" stroke-width="2.5" fill="transparent" r="20" cx="24" cy="24"/>
+    </svg>
+    <svg class="arrow-up" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#0f172a" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+      <line x1="12" y1="19" x2="12" y2="5"></line>
+      <polyline points="5 12 12 5 19 12"></polyline>
+    </svg>
+  </button>
+
+  <!-- Modals & Drawers -->
+  <div class="modal-overlay" id="searchModal" aria-hidden="true">
+    <div class="search-box-modal">
+      <div class="search-header-row">
+        <h3 style="font-size: 20px; font-weight: 700;">Search Texon Corporate</h3>
+        <button type="button" class="close-btn" id="searchCloseBtn" aria-label="Close Search">✕</button>
+      </div>
+      <div class="search-input-wrap">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#64748b" stroke-width="2">
+          <circle cx="11" cy="11" r="8"></circle>
+          <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+        </svg>
+        <input type="text" id="searchInput" placeholder="Search services, case studies, insights...">
+      </div>
+      <div style="font-size: 13.5px; color: #64748b;">
+        Popular: <a href="index.html#services" style="color: #2563eb; text-decoration: underline;">Financial Advisory</a>, <a href="portfolio.html" style="color: #2563eb; text-decoration: underline;">Case Studies</a>, <a href="blog.html" style="color: #2563eb; text-decoration: underline;">Insights</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="drawer-container" id="mobileMenuDrawer">
+    <div class="drawer-header">
+      <a href="index.html" class="brand-logo" aria-label="Stackly Home">
+        <img src="asset/images/stackly_.webp" alt="Stackly" class="brand-logo-img" style="height: 32px;">
+      </a>
+      <button type="button" class="close-btn" id="mobileMenuCloseBtn">✕</button>
+    </div>
+    <div class="drawer-body">
+      <nav class="mobile-nav-links">
+        <a href="index.html" class="mobile-nav-link" onclick="document.getElementById('mobileMenuDrawer').classList.remove('active');">Home <span>→</span></a>
+        <a href="about.html" class="mobile-nav-link" onclick="document.getElementById('mobileMenuDrawer').classList.remove('active');">About <span>→</span></a>
+        <a href="portfolio.html" class="mobile-nav-link" onclick="document.getElementById('mobileMenuDrawer').classList.remove('active');">Portfolio <span>→</span></a>
+        <a href="blog.html" class="mobile-nav-link" onclick="document.getElementById('mobileMenuDrawer').classList.remove('active');">Blog <span>→</span></a>
+        <a href="contact.html" class="mobile-nav-link" onclick="document.getElementById('mobileMenuDrawer').classList.remove('active');">Contact <span>→</span></a>
+      </nav>
+      <div style="margin-top: 28px; display: flex; flex-direction: column; gap: 12px;">
+        <a href="login.html" class="btn-login" id="mobileLoginBtn" style="width: 100%; justify-content: center;">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M15 3h4a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2h-4"></path>
+            <polyline points="10 17 15 12 10 7"></polyline>
+            <line x1="15" y1="12" x2="3" y2="12"></line>
+          </svg>
+          <span>Login / Sign In</span>
+        </a>
+        <a href="404.html" class="btn-connect" style="width: 100%; justify-content: center;">
+          <span>Let's Connect</span>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="7" y1="17" x2="17" y2="7"></line>
+            <polyline points="7 7 17 7 17 17"></polyline>
+          </svg>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal-overlay" id="loginModal" aria-hidden="true">
+    <div class="login-modal-card">
+      <div class="login-header-bar">
+        <h3>Enterprise Portal Login</h3>
+        <button type="button" class="close-btn" id="loginCloseBtn">✕</button>
+      </div>
+      <form class="login-form-body" id="loginForm" onsubmit="event.preventDefault(); alert('Welcome back to Texon Corporate Portal!'); document.getElementById('loginModal').classList.remove('active');">
+        <div class="form-field-group">
+          <label for="loginEmail" class="form-label">Corporate Email Address</label>
+          <input type="email" id="loginEmail" class="form-input" placeholder="executive@company.com" required>
+        </div>
+        <div class="form-field-group">
+          <label for="loginPassword" class="form-label">Password</label>
+          <input type="password" id="loginPassword" class="form-input" placeholder="••••••••••••" required>
+        </div>
+        <button type="submit" class="btn-login-submit">Authenticate Account →</button>
+      </form>
+    </div>
+  </div>
+
+  <div class="drawer-container" id="cartDrawer">
+    <div class="drawer-header">
+      <h3 class="drawer-title">Selected Advisory Services (5)</h3>
+      <button type="button" class="close-btn" id="cartCloseBtn">✕</button>
+    </div>
+    <div class="drawer-body">
+      <div class="cart-items-list">
+        <div class="cart-item-row">
+          <div class="cart-item-thumb"><img src="asset/images/portfolio-1.webp" alt="M&amp;A Advisory"></div>
+          <div class="cart-item-info">
+            <h6>Global Strategic Advisory</h6>
+            <div class="cart-item-price">$4,500 / mo</div>
+          </div>
+        </div>
+        <div class="cart-item-row">
+          <div class="cart-item-thumb"><img src="asset/images/portfolio-2.webp" alt="AI Analytics"></div>
+          <div class="cart-item-info">
+            <h6>Enterprise Analytics Suite</h6>
+            <div class="cart-item-price">$3,200 / mo</div>
+          </div>
+        </div>
+      </div>
+      <div style="border-top: 1px solid #e2e8f0; padding-top: 18px; margin-bottom: 20px;">
+        <div style="display: flex; justify-content: space-between; font-weight: 700; font-size: 18px;">
+          <span>Estimated Total:</span>
+          <span style="color: #2563eb;">$17,450 / mo</span>
+        </div>
+      </div>
+      <a href="404.html" class="btn-connect" style="width: 100%; justify-content: center; display: inline-flex;" onclick="document.getElementById('cartDrawer').classList.remove('active');">
+        Proceed to Corporate Onboarding ↗
+      </a>
+    </div>
+  </div>
+
+  <div class="drawer-container" id="settingsDrawer">
+    <div class="drawer-header">
+      <h3 class="drawer-title">Theme Customizer</h3>
+      <button type="button" class="close-btn" id="settingsCloseBtn">✕</button>
+    </div>
+    <div class="drawer-body">
+      <h4 style="font-size: 15px; font-weight: 700; margin-bottom: 14px;">Select Primary Brand Accent:</h4>
+      <div style="display: flex; gap: 12px; margin-bottom: 28px;">
+        <div class="theme-color-option" data-color="#2563eb" style="width: 38px; height: 38px; border-radius: 50%; background: #2563eb; cursor: pointer; box-shadow: 0 3px 8px rgba(37,99,235,0.4);" title="Royal Blue (Default)"></div>
+        <div class="theme-color-option" data-color="#0284c7" style="width: 38px; height: 38px; border-radius: 50%; background: #0284c7; cursor: pointer;" title="Ocean Sky"></div>
+        <div class="theme-color-option" data-color="#4f46e5" style="width: 38px; height: 38px; border-radius: 50%; background: #4f46e5; cursor: pointer;" title="Indigo Enterprise"></div>
+        <div class="theme-color-option" data-color="#0d9488" style="width: 38px; height: 38px; border-radius: 50%; background: #0d9488; cursor: pointer;" title="Teal Modern"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Core Theme Script -->
+  <script src="asset/js/main.js"></script>
+</body>
+</html>
